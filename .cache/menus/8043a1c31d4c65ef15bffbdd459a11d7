@@ -1,0 +1,861 @@
+1.2
+lxqt-applications.menu
+12
+D/home/ipk/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/desktop-directories
+D/home/ipk/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/applications
+D/usr/share/applications/screensavers
+D/usr/share/applications/kde
+D/usr/share/applications/kde4
+D/etc/xdg/menus/applications-merged
+D/home/ipk/.config/menus/applications-merged
+F/etc/xdg/menus/lxqt-applications.menu
+X-LXQt;LXQt;Unity;
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+2
+0
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+2
+0
+-org.kde.ark.desktop
+Ark
+Work with file archives
+ark
+
+5
+Archiving Tool
+ark %U
+0
+0
+
+
+Qt;KDE;Utility;Archiving;Compression;X-KDE-Utilities-File
+
+-org.gnome.DiskUtility.desktop
+Disks
+Manage Drives and Media
+gnome-disks
+
+5
+
+gnome-disks
+2
+0
+
+
+GNOME;GTK;Utility;X-GNOME-Utilities
+disk,drive,volume,harddisk,hdd,disc,cdrom,dvd,partition,iso,image,backup,restore,benchmark,raid,luks,encryption,S.M.A.R.T.,smart
+-emacs.desktop
+Emacs
+Edit text
+emacs
+
+5
+Text Editor
+emacs %f
+0
+0
+
+
+Utility;TextEditor;X-Red-Hat-Base
+
+-gvim.desktop
+gVim
+Edit text files
+gvim
+
+5
+Text Editor
+gvim -f %F
+2
+0
+gvim
+
+Utility;TextEditor
+Text,editor
+-yelp.desktop
+Help
+Get help with GNOME
+help-browser
+
+5
+
+yelp %u
+2
+130
+
+
+GNOME;GTK;Core;Documentation;Utility
+documentation,information,manual,help
+-org.kde.klipper.desktop
+Klipper
+A cut & paste history utility
+klipper
+
+5
+Clipboard Tool
+klipper
+0
+-5
+
+
+Qt;KDE;Utility;X-KDE-Utilities-Desktop
+
+-pcmanfm-qt.desktop
+PCManFM File Manager
+Browse the file system and manage the files
+system-file-manager
+
+5
+File Manager
+pcmanfm-qt %U
+2
+0
+
+
+FileManager;Utility;Core;Qt;X-LXQt;X-Help
+
+
++System Settings
+Administration
+Change systemwide settings (affects all users)
+preferences-system
+SystemConfig.directory
+2
+0
+-org.mageia.dnfdragora.desktop
+dnfdragora
+A graphical front end for installing, removing and updating packages
+dnfdragora
+
+5
+Install & Remove Software
+dnfdragora
+0
+0
+
+
+System;Settings;PackageManager
+
+-org.mageia.dnfdragora-updater.desktop
+dnfdragora-updater
+Automatically check for updates and notify
+dnfdragora
+
+5
+Tray-icon to check for updates
+dnfdragora-updater
+0
+0
+
+
+System;Settings;PackageManager
+
+-firewall-config.desktop
+Firewall
+Firewall Configuration
+firewall-config
+
+5
+
+/usr/bin/firewall-config
+2
+0
+
+
+System;Settings;Security
+firewall,network,security,iptables,netfilter
+-system-config-keyboard.desktop
+Keyboard
+Configure the system keyboard
+system-config-keyboard
+
+5
+
+system-config-keyboard
+3
+-7
+
+
+Settings;System;HardwareSettings
+
+-system-config-language.desktop
+Language
+Change the default system language
+preferences-desktop-locale
+
+5
+
+/usr/bin/system-config-language
+2
+0
+
+
+System;Settings;X-Red-Hat-Base
+
+-system-config-users.desktop
+Users and Groups
+Add or remove users and groups
+system-users
+
+5
+
+/usr/bin/system-config-users
+0
+0
+
+
+System;Settings;X-Red-Hat-Base
+
+
++Internet
+Internet
+Programs for Internet access such as web and email
+applications-internet
+lxde-network.directory
+2
+0
+-org.kde.falkon.desktop
+Falkon
+A fast and secure web browser
+falkon
+
+5
+Web Browser
+falkon %u
+0
+0
+
+
+Network;WebBrowser
+
+-firefox.desktop
+Firefox
+Browse the Web
+firefox
+
+5
+Web Browser
+firefox %u
+2
+0
+
+
+Network;WebBrowser
+web,browser,internet
+
++Development
+Programming
+Tools for software development
+applications-development
+lxde-development.directory
+2
+0
+-emacs.desktop
+Emacs
+Edit text
+emacs
+
+5
+Text Editor
+emacs %f
+0
+0
+
+
+Utility;TextEditor;X-Red-Hat-Base
+
+-geany.desktop
+Geany
+A fast and lightweight IDE using GTK+
+geany
+
+5
+Integrated Development Environment
+geany %F
+2
+0
+
+
+GTK;Development;IDE
+Text,Editor
+-qgit.desktop
+QGit
+git repository browser
+qgit
+
+5
+QGit
+qgit
+2
+0
+
+
+Development;Qt;RevisionControl
+
+-qt5-qdbusviewer.desktop
+Qt5 QDbusViewer
+Debug D-Bus applications
+qdbusviewer-qt5
+
+5
+D-Bus Debugger
+qdbusviewer-qt5
+0
+0
+
+
+Qt;Development;Debugger
+
+-org.qt-project.qtcreator.desktop
+Qt Creator
+
+QtProject-qtcreator
+
+5
+C++ IDE for developing Qt applications
+qtcreator %F
+0
+0
+
+
+Development;IDE;Qt
+
+
++System
+System Tools
+System configuration and monitoring
+applications-system
+lxde-system-tools.directory
+2
+0
+-fedora-release-notes.webapp.desktop
+Fedora Release Notes
+Release Notes for Fedora 28.01
+fedora-release-notes
+
+5
+Release Notes
+sh -c "PROFILEDIR=\"\$HOME/.config/epiphany/fedora-release-notes\";DOC="/usr/share/doc/fedora-release-notes/index.html"; [ -d \$PROFILEDIR ] || mkdir \$PROFILEDIR;epiphany --application-mode --profile=\$PROFILEDIR \$DOC || xdg-open \$DOC " 
+0
+2
+
+
+System;Documentation
+
+-fedora-release-notes.desktop
+Fedora Release Notes
+Release Notes for Fedora 28.01
+fedora-release-notes
+
+5
+Release Notes
+xdg-open file:///usr/share/doc/fedora-release-notes/index.html
+0
+-3
+
+
+System;Documentation
+
+-nm-tray.desktop
+nm-tray
+NetworkManager frontend (tray icon)
+network-transmit
+
+5
+
+nm-tray
+0
+0
+nm-tray
+
+System;Monitor;Qt
+
+-gnome-abrt.desktop
+Problem Reporting
+View and report application crashes
+gnome-abrt
+
+5
+
+gnome-abrt
+2
+0
+
+
+System
+abrt,bug reporting,crash logger
+-qterminal.desktop
+QTerminal
+Terminal emulator
+utilities-terminal
+
+5
+Terminal emulator
+qterminal
+0
+0
+
+
+Qt;System;TerminalEmulator
+
+-qterminal_drop.desktop
+QTerminal drop down
+A drop-down terminal emulator.
+utilities-terminal
+
+5
+Drop-down Terminal
+qterminal --drop
+0
+0
+
+
+Qt;System;TerminalEmulator
+
+-setroubleshoot.desktop
+SELinux Troubleshooter
+Troubleshoot SELinux access denials
+setroubleshoot_icon
+
+5
+SELinux Troubleshooter
+/usr/bin/sealert -b
+2
+0
+
+
+System
+policy,security,selinux,avc,permission,mac,alert,sealert
+-xterm.desktop
+XTerm
+standard terminal emulator for the X window system
+xterm-color
+
+5
+Terminal
+xterm
+0
+0
+
+
+System;TerminalEmulator
+shell,prompt,command,commandline,cmd
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+2
+0
++LXQtSettings
+LXQt settings
+
+preferences-system
+lxqt-settings.directory
+2
+0
+-lxqt-config.desktop
+LXQt Configuration Center
+Configure your system
+preferences-system
+
+5
+System Settings
+lxqt-config
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt;X-Help
+
+-
+-pcmanfm-qt-desktop-pref.desktop
+Desktop
+Change wallpapers and behavior of desktop manager
+user-desktop
+
+5
+Desktop Settings
+pcmanfm-qt --desktop-pref=general
+2
+0
+
+
+Settings;Qt;DesktopSettings;X-LXQt;X-Help
+
+
+-lxqt-config-appearance.desktop
+Appearance
+
+preferences-desktop-theme
+
+5
+
+lxqt-config-appearance
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt;X-Help
+
+-lxqt-config-brightness.desktop
+Brightness
+
+brightnesssettings
+
+5
+
+lxqt-config-brightness
+0
+32
+
+
+Settings;DesktopSettings;Qt;HardwareSettings;X-LXQt;X-Help
+
+-ibus-setup-cangjie.desktop
+Cangjie Preferences
+Set preferences for the Cangjie input method
+ibus-setup-cangjie
+
+5
+
+/usr/bin/ibus-setup-cangjie cangjie
+2
+-3
+
+
+Settings
+
+-lxqt-config-notificationd.desktop
+Desktop Notifications
+Configure desktop notifications
+preferences-desktop-theme
+
+5
+LXQt Notification Settings
+lxqt-config-notificationd
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt
+
+-lxqt-config-file-associations.desktop
+File Associations
+
+preferences-desktop-filetype-association
+
+5
+
+lxqt-config-file-associations
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt;X-Help
+
+-im-chooser.desktop
+Input Method Selector
+Choose the input method to be used or disable the input method usage on the desktop
+im-chooser
+
+5
+
+im-chooser
+2
+-9
+
+
+Applications;Settings;X-GNOME-PersonalSettings
+
+-kdesystemsettings.desktop
+KDE System Settings
+Configuration tools for your computer
+preferences-system
+
+5
+KDE System Settings
+systemsettings5
+0
+-5
+
+
+Qt;KDE;Settings
+
+-lxqt-config-input.desktop
+Keyboard and Mouse
+
+input-keyboard
+
+5
+
+lxqt-config-input
+0
+32
+
+
+Qt;Settings;HardwareSettings;DesktopSettings;X-LXQt;X-Help
+
+-lxqt-config-locale.desktop
+Locale
+
+preferences-desktop-locale
+
+5
+
+lxqt-config-locale
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt;X-Help
+
+-lxqt-config-monitor.desktop
+Monitor settings
+
+preferences-desktop-display
+
+5
+
+lxqt-config-monitor
+0
+32
+
+
+Settings;DesktopSettings;Qt;HardwareSettings;X-LXQt;X-Help
+
+-nm-connection-editor.desktop
+Network Connections
+Manage and change your network connection settings
+preferences-system-network
+
+5
+
+nm-connection-editor
+2
+-7
+
+
+GNOME;GTK;Settings;X-GNOME-NetworkSettings
+
+-obconf.desktop
+Openbox Configuration Manager
+Tweak settings for Openbox
+obconf
+
+5
+Configuration Manager
+obconf %f
+2
+0
+
+
+Settings;DesktopSettings;GTK;X-Fedora
+
+-lxqt-config-powermanagement.desktop
+Power Management
+Various settings regarding Power Management like battery or idleness watcher
+preferences-system-power-management
+
+5
+Power Management Settings
+lxqt-config-powermanagement
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt
+
+-xscreensaver-properties.desktop
+Screensaver
+Change screensaver properties
+xscreensaver
+
+5
+
+xscreensaver-demo
+0
+0
+
+
+Settings;DesktopSettings;Security;X-XFCE
+
+-lxqt-config-session.desktop
+Session Settings
+Configuration for LXQt sessions
+preferences-system-session-services
+
+5
+LXQt Session Settings
+lxqt-config-session
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt
+
+-lxqt-config-globalkeyshortcuts.desktop
+Shortcut Keys
+Configure shortcut keys in LXQt
+preferences-desktop-keyboard
+
+5
+Keyboard Shortcut Settings
+lxqt-config-globalkeyshortcuts
+0
+32
+
+
+Settings;DesktopSettings;Qt;X-LXQt
+
+-systemsettings.desktop
+System Settings
+Configuration tools for your computer
+preferences-system
+
+5
+System Settings
+systemsettings5
+0
+4
+
+
+Qt;KDE;Settings
+
+
+-lxqt-about.desktop
+About LXQt
+Learn more about LXQt
+help-about
+
+5
+About LXQt
+lxqt-about
+0
+32
+
+
+System;Documentation;X-LXQt;X-Help
+
+-
++X-Leave
+Leave
+Leave Session
+system-shutdown
+lxqt-leave.directory
+2
+0
+-lxqt-hibernate.desktop
+Hibernate
+hibernate the machine
+system-suspend-hibernate
+
+5
+Hibernate
+lxqt-leave --hibernate
+0
+32
+
+
+System;X-Leave;X-LXQt
+
+-lxqt-leave.desktop
+Leave
+Leave dialog
+system-shutdown
+
+5
+Leave
+lxqt-leave
+0
+64
+
+
+System;X-Leave
+
+-lxqt-logout.desktop
+Logout
+Logout from the current session
+system-log-out
+
+5
+Logout
+lxqt-leave --logout
+0
+32
+
+
+System;X-Leave;X-LXQt
+
+-lxqt-reboot.desktop
+Reboot
+reboot the machine
+system-reboot
+
+5
+Reboot
+lxqt-leave --reboot
+0
+32
+
+
+System;X-Leave;X-LXQt
+
+-lxqt-shutdown.desktop
+Shutdown
+shutdown the machine
+system-shutdown
+
+5
+Shutdown
+lxqt-leave --shutdown
+0
+32
+
+
+System;X-Leave;X-LXQt
+
+-lxqt-suspend.desktop
+Suspend
+suspend the machine
+system-suspend
+
+5
+Suspend
+lxqt-leave --suspend
+0
+32
+
+
+System;X-Leave;X-LXQt
+
+
+-lxqt-lockscreen.desktop
+Lock Screen
+Lock the current session
+system-lock-screen
+
+5
+Lock Screen
+lxqt-leave --lockscreen
+0
+32
+
+
+System;Screensaver;X-LXQt
+
+

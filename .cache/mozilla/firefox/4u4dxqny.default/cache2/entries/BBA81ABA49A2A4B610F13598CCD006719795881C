@@ -1,0 +1,407 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="de-de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      
+  
+  
+    
+  
+    
+  
+
+  rename › Wiki › ubuntuusers.de
+
+    </title>
+    
+  
+      
+      
+      
+        <link rel="stylesheet" type="text/css" href="//static-cdn.ubuntu-de.org/style/main.css?v=v0.17.6" />
+      
+        <link rel="stylesheet" type="text/css" href="//static-cdn.ubuntu-de.org/style/markup.css?v=v0.17.6" />
+      
+        <link rel="stylesheet" type="text/css" href="//static-cdn.ubuntu-de.org/style/wiki.css?v=v0.17.6" />
+      
+        <link rel="stylesheet" type="text/css" href="//static-cdn.ubuntu-de.org/style/highlight.css?v=v0.17.6" />
+      
+
+      <link rel="stylesheet" type="text/css" href="https://ubuntuusers.de/markup.css/?v=v0.17.6" />
+      <link rel="stylesheet" type="text/css" href="//static-cdn.ubuntu-de.org/style/print.css?v=v0.17.6" media="print" />
+
+      
+
+      
+      <link rel="shortcut icon" href="//static-cdn.ubuntu-de.org/img/favicon.ico" />
+      <meta name="theme-color" content="#a87300" />
+
+      
+
+    
+
+  <link rel="canonical" href="https://wiki.ubuntuusers.de/rename/" />
+
+  </head>
+  <body>
+   <div class="wrap">
+    <div class="header">
+      <h1><a href="/"><span>ubuntuusers.de</span></a></h1>
+      <ul class="tabbar">
+        
+          <li class="portal">
+            <div class="tab_left"></div>
+            <div class="tab_center"><a href="https://ubuntuusers.de/">Portal<span></span></a></div>
+            <div class="tab_right"></div>
+          </li>
+        
+          <li class="forum">
+            <div class="tab_left"></div>
+            <div class="tab_center"><a href="https://forum.ubuntuusers.de/">Forum<span></span></a></div>
+            <div class="tab_right"></div>
+          </li>
+        
+          <li class="wiki active">
+            <div class="tab_left"></div>
+            <div class="tab_center"><a href="https://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+            <div class="tab_right"></div>
+          </li>
+        
+          <li class="ikhaya">
+            <div class="tab_left"></div>
+            <div class="tab_center"><a href="https://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+            <div class="tab_right"></div>
+          </li>
+        
+          <li class="planet">
+            <div class="tab_left"></div>
+            <div class="tab_center"><a href="https://planet.ubuntuusers.de/">Planet<span></span></a></div>
+            <div class="tab_right"></div>
+          </li>
+        
+        
+        <li class="community">
+          <div class="tab_left"></div>
+          <div class="tab_center"><a href="https://wiki.ubuntuusers.de/Mitmachen/">Mitmachen<span></span></a></div>
+          <div class="tab_right"></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="body">
+      <div class="appheader">
+        
+          <ul class="navi_global">
+            <li>
+              <noscript><strong class="nojs error">Bitte aktiviere JavaScript!</strong></noscript>
+            </li>
+            
+              <li>
+                <a href="https://ubuntuusers.de/login/?next=https%3A%2F%2Fwiki.ubuntuusers.de%2Frename%2F" id="login_link">
+                  Anmelden
+                </a>
+              </li>
+              <li>
+                <a href="https://ubuntuusers.de/register/">
+                  Registrieren
+                </a>
+              </li>
+            
+          </ul>
+        
+        
+
+        <div class="pagetitle">
+          <h1 class="breadcrumb_title">
+            <a href="https://wiki.ubuntuusers.de/" class="separator">
+              Wiki
+            </a>
+          </h1>
+          
+            <h2 class="breadcrumb_subtitle"><a href="https://wiki.ubuntuusers.de/rename/">rename</a></h2>
+          
+        </div>
+      </div>
+
+      <div class="pathbar">
+
+        
+        <form method="GET" action="https://duckduckgo.com/" class="search" name="searchsys" data-active-app="wiki">
+          <div>
+            <input type="text" size="40" name="keyword" class="search_query" />
+            <input type="hidden" name="q">
+
+            
+            <input type="hidden" name="kam" value="osm">
+            <input type="hidden" name="kj" value="D8A648">
+            <input type="hidden" name="ky" value="f3eedd">
+            <input type="hidden" name="k18" value="1">
+            <input type="hidden" name="ka" value="Ubuntu">
+
+            <input type="submit" value="Suche" class="search_submit" />
+
+            <a href="https://wiki.ubuntuusers.de/Suchfunktion/">via DuckDuckGo</a>
+          </div>
+        </form>
+
+        
+        
+
+        
+          <div class="breadcrumb">
+            <ol>
+              
+                  <li><a href="https://wiki.ubuntuusers.de/">Wiki</a></li>
+              
+                  <li><a href="https://wiki.ubuntuusers.de/rename/">rename</a></li>
+              
+            </ol>
+          </div>
+        
+      </div>
+
+      
+
+      
+
+      <!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+
+      <div class="page_content">
+        
+        
+        
+        <div class="navi_sidebar navigation">
+          
+  <div class="container">
+    
+
+    <h3 class="navi_wiki">Wiki</h3>
+    <ul>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Index/">Index</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/wiki/recentchanges/">Letzte Änderungen</a></li>
+      
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Neue_Artikel/">Liste neuer Artikel</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/">Übersicht</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/FAQ_-_h%C3%A4ufig_gestellte_Fragen/">FAQ</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Benutzung/">Benutzung</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Kategorien/">Kategorie</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/wiki/tagcloud/">Wortwolke</a></li>
+    </ul>
+
+    <h3 class="navi_join">Mitmachen</h3>
+    <ul>
+      <li><a href="https://wiki.ubuntuusers.de/Wikiartikel_anlegen/">Wikiartikel anlegen</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/HowTo/">Howto anlegen</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Referenz/">Wiki-Referenz</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Syntax/">Wiki-Syntax</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Baustelle/">Baustellen</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Artikelideen/">Artikelideen</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/ungetestet/">Ungetestete Artikel</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Vorlagen/Ausbauf%C3%A4hig/a/backlinks/">Ausbaufähige Artikel</a></li>
+      <li><a href="https://wiki.ubuntuusers.de/Wiki/Vorlagen/Fehlerhaft/a/backlinks/">Fehlerhafte Artikel</a></li>
+      <li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+    </ul>
+
+    
+      
+  <h3 class="navi_config">Konfiguration</h3>
+    <ul>
+      
+        
+
+        
+      
+
+      <li><a href="https://wiki.ubuntuusers.de/rename/a/backlinks/">Backlinks anzeigen</a></li>
+      <li>
+        Exportieren
+        <ul>
+          <li><a href="https://wiki.ubuntuusers.de/rename/a/export/meta/" rel="nofollow">Metadaten</a></li>
+          <li><a href="https://wiki.ubuntuusers.de/rename/a/export/raw/" rel="nofollow">Rohformat</a></li>
+          <li><a href="https://wiki.ubuntuusers.de/rename/a/export/html/" rel="nofollow">HTML</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    
+  </div>
+
+        </div>
+        
+        
+        <div class="navi_tabbar navigation">
+          
+  
+    <ul>
+      
+        
+        <li><a href="https://wiki.ubuntuusers.de/rename/" class="active">Artikel</a></li>
+        
+      
+        
+        <li><a href="https://wiki.ubuntuusers.de/rename/a/edit/">Bearbeiten</a></li>
+        
+      
+        
+        <li><a href="https://wiki.ubuntuusers.de/rename/a/log/">Verlauf</a></li>
+        
+      
+      <li>
+        <a href="https://forum.ubuntuusers.de/topic/neuer-artikel-baustelle-rename/last_post/">Diskussion</a>
+      </li>
+      
+        <li><a href="https://wiki.ubuntuusers.de/rename/a/subscribe/">Abonnieren</a></li>
+      
+    </ul>
+  
+
+        </div>
+        
+        <div class="content content_tabbar content_sidebar">
+          
+  
+  <h1 class="pagetitle"><a href="https://wiki.ubuntuusers.de/rename/a/backlinks/">rename</a></h1>
+
+  
+
+  <div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p> 
+Dieser Artikel ist größtenteils für alle Ubuntu-Versionen gültig.
+</p></div></div><p> 
+</p><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a id="source-1" href="#source-1" class="crosslink anchor"></a> <a href="https://wiki.ubuntuusers.de/Terminal/" class="internal">Ein Terminal öffnen</a></p></li></ol></div></div><p>
+</p><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a href="#Installation" class="crosslink">Installation
+</a></li><li><a href="#Benutzung" class="crosslink">Benutzung
+</a><ol class="arabic"><li><a href="#Optionen" class="crosslink">Optionen
+</a></li><li><a href="#Syntax-der-regulaeren-Ausdruecke-in-Perl" class="crosslink">Syntax der regulären Ausdrücke in Perl
+</a></li></ol></li><li><a href="#Links" class="crosslink">Links
+</a></li></ol></div><p><a href="//media-cdn.ubuntu-de.org/wiki/attachments/10/28/terminal.png" rel="nofollow" class="external"><img src="//media-cdn.ubuntu-de.org/wiki/thumbnails/8/87/873df3d4149ab35efbc7b1f3654ad92a9b4e579ai48x.png" alt="Wiki/Icons/terminal.png" class="image-left" /></a>
+<strong>rename</strong> ist ein Programm für die Kommandozeile, das es ermöglicht, Dateien eines Ordners mithilfe der regulären Ausdrücke von <a href="https://wiki.ubuntuusers.de/Perl/" class="internal">Perl</a> umzubenennen. rename und der Shell-Befehl <a href="https://wiki.ubuntuusers.de/mv/" class="internal">mv</a> sind nicht dasselbe und bieten jeweils unterschiedliche Möglichkeiten. Dies lässt sich prinzipiell auch direkt im Namen erkennen: rename (&quot;umbenennen&quot;) dient der Umbenennung von Dateien, mv (&quot;verschieben&quot;) kann daneben auch Dateien von Verzeichnis nach Verzeichnis verschieben.</p><p>rename ist im Vergleich zu mv ein einfacher Weg, eine große Anzahl von Dateien eines Ordners umzubenennen. Ansonsten ist die Funktionalität von rename nur über zahllose einzelne mv-Befehle im Terminal oder über ein Bash-Skript zu erreichen. rename hat jedoch auch klare Grenzen. Nicht möglich sind dabei u.a.:</p><ul><li><p>Verschieben von Dateien in andere Ordner</p></li><li><p>Metadaten wie Autor, Erstellungsdatum o.Ä. in den Dateinamen einfließen lassen</p></li><li><p>Dateien basierend auf anderen Dateinamen umbenennen</p></li></ul><p>
+Für solche Zwecke eignen sich spezielle <a href="https://wiki.ubuntuusers.de/Perl/" class="internal">Perl</a>- oder <a href="https://wiki.ubuntuusers.de/Bash/" class="internal">Bash</a>-Skripte. Unter <a href="https://wiki.ubuntuusers.de/Sonstige_Software/#Dateimanagement" class="internal">Dateimanagement</a> finden sich Programme zum Umbenennen mit grafischer Oberfläche.</p><div class="section_1"><h2 id="Installation">Installation<a href="#Installation" class="headerlink">¶</a></h2><p>
+rename ist bei Ubuntu ein <a href="https://wiki.ubuntuusers.de/Symlink/" class="internal">Symlink</a> auf <strong>/usr/bin/prename</strong>, das wiederum Teil des Pakets <strong>perl</strong> ist und in der Standardinstallation von Ubuntu enthalten ist. Will man das Programm <a href="http://manpages.ubuntu.com/cgi-bin/search.py?lr=lang_en&amp;q=rename.ul" class="interwiki interwiki-man">rename</a> aus dem Paket <strong>util-linux</strong> verwenden, lautet der Befehl:</p><div class="bash"><div class="contents"><pre class="notranslate">rename.ul </pre></div></div></div><div class="section_1"><h2 id="Benutzung">Benutzung<a href="#Benutzung" class="headerlink">¶</a></h2><p>
+Der rename-Befehl bezieht sich immer auf das aktuelle Verzeichnis. Er sieht dabei grundsätzlich wie folgt aus:</p><div class="bash"><div class="contents"><pre class="notranslate">rename OPTIONEN &#39;REGULÄRER_AUSDRUCK&#39; DATEIEN </pre></div></div><p>Der reguläre Ausdruck muss dabei in der Perl-Syntax sein. Diese sieht wie folgt aus:</p><pre class="notranslate">s/SUCHSTRING/ERSETZUNGSSTRING/MODIFIER</pre><p>Die umzubenennenden Dateien folgen einer Wildcard-Syntax, wo der * für eine beliebige Anzahl von Zeichen steht.</p><div class="section_2"><h3 id="Optionen">Optionen<a href="#Optionen" class="headerlink">¶</a></h3><p>
+Es lassen sich mehrere Optionen pro Kommando eingeben:</p><ul><li><p><code class="notranslate">-n</code> oder <code class="notranslate">--no-act</code>: Die Dateien werden nicht umbenannt und es wird jeweils im Terminal nur angezeigt, wie die Dateien bei einer solchen Umbenennung aussehen würden. Dies kann sinnvoll sein, wenn man sich nicht sicher ist, ob der reguläre Ausdruck funktioniert. Beispiel: </p><div class="bash"><div class="contents"><pre class="notranslate">rename -n &#39;s/(.*)(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember) (\d{4})(.+)/$1$4 $2 $3/i&#39; * </pre></div></div></li><li><p><code class="notranslate">-f</code> oder <code class="notranslate">--force</code>: Überschreibt existierende Dateien, falls der neue Dateiname blockiert ist.</p></li><li><p><code class="notranslate">-v</code> oder <code class="notranslate">--verbose</code>: Schreibt eine Erfolgsnachricht pro umbenannter Datei ins Terminal, sodass man einfach prüfen kann, ob die Umbenennung funktioniert hat. Beispiel: </p><div class="bash"><div class="contents"><pre class="notranslate">rename -v &#39;s/^Lenni Kravitz/Lenny Kravitz/&#39; *.mp3 </pre></div></div></li></ul><p>
+</p></div><div class="section_2"><h3 id="Syntax-der-regulaeren-Ausdruecke-in-Perl">Syntax der regulären Ausdrücke in Perl<a href="#Syntax-der-regulaeren-Ausdruecke-in-Perl" class="headerlink">¶</a></h3><p>
+</p><table style="width: 95%"><tr class="titel"><td colspan="2"> Syntax </td></tr><tr class="kopf"><td colspan="2"> Selektoren </td></tr><tr><td><code class="notranslate"> \w</code> </td><td> Jeden Buchstaben, jede Zahl und den Unterstrich (_) </td></tr><tr><td> <code class="notranslate">\d </code></td><td> Jede Zahl </td></tr><tr><td> <code class="notranslate">\s</code> </td><td> Jedes Leerzeichen </td></tr><tr><td> <code class="notranslate"> . </code> </td><td> ein beliebiges Zeichen </td></tr><tr><td> <code class="notranslate">[abc]</code> </td><td> Jedes in der eckigen Klammer eingeschlossene Zeichen </td></tr><tr><td> <code class="notranslate">[^abc] </code></td><td> Alle Zeichen, die nicht in der eckigen Klammer sind </td></tr><tr><td> <code class="notranslate"> ^</code> </td><td> Anfang des Dateinamens </td></tr><tr><td> <code class="notranslate"> $</code> </td><td> Ende des Dateinamens </td></tr><tr><td> <code class="notranslate">\ </code> </td><td> maskiert das folgende Zeichen </td></tr><tr class="kopf"><td colspan="2"> Quantifier </td></tr><tr><td> <code class="notranslate">*</code> </td><td> 0 bis unendlich </td></tr><tr class="highlight"><td> <code class="notranslate">+</code> </td><td> 1 bis unendlich </td></tr><tr><td> <code class="notranslate">? </code></td><td> 0 oder einmal </td></tr><tr class="highlight"><td><code class="notranslate"> {m,}</code> </td><td> mindestens m-mal </td></tr><tr><td><code class="notranslate"> {,n}</code> </td><td> maximal n-mal vorhanden </td></tr><tr class="highlight"><td><code class="notranslate"> {m,n}</code> </td><td> mindestens m-mal und maximal n-mal </td></tr><tr class="kopf"><td colspan="2"> Modifier </td></tr><tr><td> <code class="notranslate">g</code> </td><td> alle Vorkommen des Suchstrings ersetzen (<em>global</em>) </td></tr><tr class="highlight"><td> <code class="notranslate">i</code> </td><td> Groß-/Kleinschreibung nicht beachten (<em>case-insensitive</em>) </td></tr><tr class="kopf"><td colspan="2"> Sonstiges </td></tr><tr><td><code class="notranslate"> ()</code> </td><td> Gruppierung einer Zeichenkette zur späteren Weiterverwendung </td></tr><tr class="highlight"><td> <code class="notranslate">| </code> </td><td> oder-Operator </td></tr><tr><td><code class="notranslate"> \1, \2</code> </td><td> erste, zweite usw. Gruppierung im Suchstring </td></tr><tr class="highlight"><td><code class="notranslate"> $1, $2</code> </td><td> erste, zweite usw. Gruppierung im Ersetzungsstring </td></tr></table><p></p><div class="section_3"><h4 id="Beispiele">Beispiele<a href="#Beispiele" class="headerlink">¶</a></h4><p>
+</p><ul><li><p>Der folgende Befehl ersetzt in allen Dateien „Max Mustermann“ durch „Erika Mustermann“: </p><div class="bash"><div class="contents"><pre class="notranslate">rename &#39;s/Max Mustermann/Erika Mustermann/g&#39; * </pre></div></div></li><li><p>In allen <strong>.jpg</strong>-Dateien wird der Datumsformat <code class="notranslate">JJJJ-MM-DD</code> in das Format <code class="notranslate">DD.MM.JJJJ</code> geändert: </p><div class="bash"><div class="contents"><pre class="notranslate">rename &#39;s/(\d{4})-(\d{2})-(\d{2})/$3.$2.$1/g&#39; *.jpg </pre></div></div></li><li><p>Datei-Erweiterung ändern (in diesem Fall <strong>.html</strong> in <strong>.xhtml</strong>): </p><div class="bash"><div class="contents"><pre class="notranslate">rename &#39;s/\.html$/.xhtml/&#39; *.html </pre></div></div></li></ul><p>
+</p></div></div></div><div class="section_1"><h2 id="Links">Links<a href="#Links" class="headerlink">¶</a></h2><p>
+</p><ul><li><p><a href="http://www.regular-expressions.info/perl.html" rel="nofollow" class="external">Reguläre Ausdrücke in Perl</a> <img src="//media-cdn.ubuntu-de.org/wiki/attachments/35/40/gb.png" alt="{en}" /></p></li><li><p><a href="http://thepcspy.com/read/bulk-rename-files-in-ubuntu/" rel="nofollow" class="external">Bulk renaming files in Ubuntu</a> <img src="//media-cdn.ubuntu-de.org/wiki/attachments/35/40/gb.png" alt="{en}" /> - Blogbeitrag, 11/2014</p></li><li><p><a href="https://wiki.ubuntuusers.de/Shell/Befehls%C3%BCbersicht/" class="internal">Shell/Befehlsübersicht</a> <img src="//media-cdn.ubuntu-de.org/wiki/attachments/29/47/overview.png" alt="{Übersicht}" /> Übersicht über verschiedene Shellbefehle</p></li></ul><p>
+</p></div></div>
+
+  <p class="meta">
+    
+      <a href="https://wiki.ubuntuusers.de/rename/a/revision/826168/">Diese Revision</a> wurde am 16. Juli 2015 19:50 von <a href="https://ubuntuusers.de/user/noisefloor/">noisefloor</a> erstellt.
+    
+      <br />Die folgenden Schlagworte wurden dem Artikel zugewiesen:
+      <a href="https://wiki.ubuntuusers.de/wiki/tags/Shell/">Shell</a>
+  </p>
+
+
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+      <div class="pathbar breadcrumb">
+        
+          <div class="breadcrumb">
+            <ol>
+              
+                  <li><a href="https://wiki.ubuntuusers.de/">Wiki</a></li>
+              
+                  <li><a href="https://wiki.ubuntuusers.de/rename/">rename</a></li>
+              
+            </ol>
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="footer" style="clear: both;">
+      <ul>
+        <li class="poweredby">
+          Powered by <a href="https://ubuntuusers.de/inyoka/">Inyoka</a>
+          
+          <br />
+          
+          Inyoka v0.17.6
+          
+          
+        </li>
+        <li class="license">
+          <a href="?flavour=mobile" class="flavour_switch" >Zur mobilen Version</a><br />
+          <img src="//static-cdn.ubuntu-de.org/img/copyleft.png" alt="Copyleft" />
+          2004 – 2018 ubuntuusers.de • Einige Rechte vorbehalten<br />
+          <a href="https://ubuntuusers.de/lizenz/" rel="cc:morePermissions">Lizenz</a> •
+          <a href="https://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="https://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="https://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+        </li>
+        <li class="housing">
+          <span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br />
+          <a href="http://noris.jobs/linux"><img src="//static-cdn.ubuntu-de.org/img/noris_logo.png" alt="noris network" /></a>
+          <a href="http://www.anexia.at/managed-hosting/"><img src="//static-cdn.ubuntu-de.org/img/anexia_logo.png" alt="anexia" /></a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+   </div>
+
+    <script type="text/javascript" src="https://ubuntuusers.de/jsi18n/?v=v0.17.6"></script>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+      var
+        $STATIC_URL = "//static-cdn.ubuntu-de.org/",
+        $MEDIA_URL = "//media-cdn.ubuntu-de.org/",
+        $BASE_DOMAIN_NAME = "ubuntuusers.de",
+        $CURRENT_USER = null,
+        $IS_LOGGED_IN = false,
+        $SIDEBAR_HIDDEN = false;
+    /*]]>*/
+    </script>
+
+   <script type="text/javascript" src="//static-cdn.ubuntu-de.org/js/jquery.min.js?v=v0.17.6"></script>
+   
+     
+       <script type="text/javascript" src="//static-cdn.ubuntu-de.org/js/classy.min.js?v=v0.17.6"></script>
+     
+   
+     
+       <script type="text/javascript" src="//static-cdn.ubuntu-de.org/js/jquery.extensions.min.js?v=v0.17.6"></script>
+     
+   
+     
+       <script type="text/javascript" src="//static-cdn.ubuntu-de.org/js/overall.min.js?v=v0.17.6"></script>
+     
+   
+
+   
+   
+  </body>
+</html>�g�l�      [��[��?��I       $    :https://wiki.ubuntuusers.de/rename/ necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAgEMIIIADCCBuigAwIBAgISA2mYZp47xF9RC48lhYD6WrbdMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xODA5MDEwMTMwNDNaFw0xODExMzAwMTMwNDNaMBkxFzAVBgNVBAMTDnVidW50dXVzZXJzLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzOBnFKGn0cKLcd6kH1l/boCkA/xR2u3wDpm9jL9FRbjKX+ITYWNKEocQQ7sffH4CKQi92DBuEsY1bzkXigd0fsngAqPZuvVhN6nKYqyhrCgJZgJs3r3tty3Kht9ptUpvWrq6QfAv7jX4M2S6XjjrzQKSBjYkYzse3uK89TKsUlsJ3HssgKKpMiCcxnT7kkDYhAL+kzozpChlwMtwUh6dIQAeZIIsUW9Y2o0XwEmyu5UDwyh5PC71wF4nRUVDpuwVXaSDTrWN7iXVyppjbd4ynt2irRdgGJzwpXmozqr98J9aVEW8GrJKRGLHMKAJpso03CXSLVF7YMcAWLiw+B+NWW9uM/z8Gq4afq/YH3akLloDHSBWTZd+rFRx9QSozRgWdBdpVPcqIy4K8Iebz/JSlOdpfcQoC8NjIejfYEr/gozmP38KQYckNMqdqC9W/9kpLM9ARnX0dxUt+1qCGfrvx3pUZH7JMixmLFha2YdGOcZ0uh67s2oxLi56yKyhNeIsVZKHgFcz8G6FocD2r6pMnNH8NKx48l4qf1OXfZ4XWBT/CR9Yy+B6e8jeJDJbJxGIjSZ86qvF6p8mrLpxKVrRqJtJ3RF8x4Sc48lW7IRS0Tyk9fsbTzbxfCEbiB4K9uSNV1mqz4oBSSw2rsMr2EQxM0jlv2En99w8Lwus7ZGfydUCAwEAAaOCBA8wggQLMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU6mNiF9tNYmpakvUOqiO2EMutKyswHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzCCARAGA1UdEQSCAQcwggEDghRhZG1pbi51YnVudHV1c2Vycy5kZYIUZm9ydW0udWJ1bnR1dXNlcnMuZGWCFWlraGF5YS51YnVudHV1c2Vycy5kZYIVbXVtYmxlLnVidW50dXVzZXJzLmRlghRwYXN0ZS51YnVudHV1c2Vycy5kZYIVcGxhbmV0LnVidW50dXVzZXJzLmRlghlzdGF0aWN3aWtpLnVidW50dXVzZXJzLmRlghN0b3VyLnVidW50dXVzZXJzLmRlghF0dC51YnVudHV1c2Vycy5kZYIOdWJ1bnR1dXNlcnMuZGWCE3dpa2kudWJ1bnR1dXNlcnMuZGWCEnd3dy51YnVudHV1c2Vycy5kZTCB/gYDVR0gBIH2MIHzMAgGBmeBDAECATCB5gYLKwYBBAGC3xMBAQEwgdYwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIGrBggrBgEFBQcCAjCBngyBm1RoaXMgQ2VydGlmaWNhdGUgbWF5IG9ubHkgYmUgcmVsaWVkIHVwb24gYnkgUmVseWluZyBQYXJ0aWVzIGFuZCBvbmx5IGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgQ2VydGlmaWNhdGUgUG9saWN5IGZvdW5kIGF0IGh0dHBzOi8vbGV0c2VuY3J5cHQub3JnL3JlcG9zaXRvcnkvMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHcAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAFlkvfiNgAABAMASDBGAiEA3r/Kl4N823RPM+Cpd5NcjlO2IRBUbklhMZHPRI76iFQCIQDowl56DSxSfwY1oJdIAUtETDJgywVkP9nz0Z60HpdFmAB1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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 29 Oct 2018 10:38:10 GMT
+Content-Length: 21822
+Vary: Cookie
+ETag: "1564a35185d62a4a86418339ac07a770"
+X-Frame-Options: DENY
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=15768000;
+ original-response-headers Date: Mon, 29 Oct 2018 10:38:10 GMT
+Content-Length: 21822
+Vary: Cookie
+ETag: "1564a35185d62a4a86418339ac07a770"
+X-Frame-Options: DENY
+Content-Type: text/html; charset=utf-8
+Set-Cookie: csrftoken=boRcRmJiCB3u1xSj38ESOVE9lS9I84wV; expires=Mon, 28-Oct-2019 10:38:10 GMT; Max-Age=31449600; Path=/; secure
+Set-Cookie: session="eyJfc2Vzc2lvbl9leHBpcnkiOjAsInNpZCI6IjgwODEyNWRmLTY5NjMtNDM3NC1iY2IxLTkwMTZhNDVlOWE5ZCJ9:1gH4vy:k-Tywgz8z1jKgbMen-gIoE-u5cI"; Domain=.ubuntuusers.de; httponly; Path=/; secure
+Strict-Transport-Security: max-age=15768000;
+ uncompressed-len 0 net-response-time-onstart 704 net-response-time-onstop 828 predictor::resource-count 33 predictor::https://static-cdn.ubuntu-de.org/style/main.css?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/style/markup.css?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/style/wiki.css?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/style/highlight.css?v=v0.17.6 1,1,1540809489,4096 predictor::https://ubuntuusers.de/markup.css/?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/style/print.css?v=v0.17.6 1,1,1540809489,4096 predictor::https://media-cdn.ubuntu-de.org/wiki/thumbnails/8/87/873df3d4149ab35efbc7b1f3654ad92a9b4e579ai48x.png 1,1,1540809489,4097 predictor::https://media-cdn.ubuntu-de.org/wiki/attachments/35/40/gb.png 1,1,1540809489,4097 predictor::https://media-cdn.ubuntu-de.org/wiki/attachments/29/47/overview.png 1,1,1540809489,4097 predictor::https://static-cdn.ubuntu-de.org/img/copyleft.png 1,1,1540809489,4097 predictor::https://static-cdn.ubuntu-de.org/img/noris_logo.png 1,1,1540809489,4097 predictor::https://static-cdn.ubuntu-de.org/img/anexia_logo.png 1,1,1540809489,4097 predictor::https://ubuntuusers.de/jsi18n/?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/js/jquery.min.js?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/js/classy.min.js?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/js/jquery.extensions.min.js?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/js/overall.min.js?v=v0.17.6 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/head.jpg 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/logo.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/main-sprite.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/icons/small/portal.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/search.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/icons/wiki_sb.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/bullet.gif 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/icons/code.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/icons/config_sb.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/wiki/toc.png 1,1,1540809489,4096 predictor::https://media-cdn.ubuntu-de.org/wiki/attachments/32/39/man.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/font/uude-font-0.83/ubuntu_derivative_uude-bold.woff2 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/font/uude-font-0.83/ubuntu_derivative_uude-light.woff2 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/icons/small/wiki.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/search_expander.png 1,1,1540809489,4096 predictor::https://static-cdn.ubuntu-de.org/img/toggle_sidebar_up.png 1,1,1540809489,4096   U>

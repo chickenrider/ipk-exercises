@@ -1,0 +1,40 @@
+[ 1542618289.362228]: IMSettings-Daemon[1238]: INFO: Starting imsettings-daemon...
+[ 1542618289.362803]: IMSettings-Daemon[1238]: INFO:   [HOME=/home/ipk/.config/imsettings]
+[ 1542618289.362873]: IMSettings-Daemon[1238]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
+[ 1542618289.363061]: IMSettings-Daemon[1238]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
+
+[ 1542618289.363123]: IMSettings-Daemon[1238]: INFO:   [MODULEDIR=/usr/lib64/imsettings]
+
+[ 1542618289.363182]: IMSettings-Daemon[1238]: INFO:   [MODULES=gsettings]
+
+imsettings information
+==========================
+XINPUTRC: /etc/X11/xinit/xinput.d//none.conf
+	  File: /etc/X11/xinit/xinput.d//none.conf
+	  Size: 110       	Blocks: 8          IO Block: 4096   regular file
+	Device: fd00h/64768d	Inode: 684778      Links: 1
+	Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+	Context: system_u:object_r:bin_t:s0
+	Access: 2018-11-18 22:22:28.819310288 +0100
+	Modify: 2018-02-08 00:56:33.000000000 +0100
+	Change: 2018-10-15 17:44:05.969686203 +0200
+	 Birth: -
+Is DBus enabled: yes
+Is imsettings enabled: yes
+Is GTK+ supported: no
+Is Qt supported: no
+DESKTOP: /usr/share/xsessions/lxqt
+GUESS_DESKTOP: $DESKTOP_SESSION
+DISABLE_IMSETTINGS: 
+IMSETTINGS_DISABLE_DESKTOP_CHECK: 
+DBUS_SESSION_BUS_ADDRESS: unix:path=/run/user/1000/bus
+GTK_IM_MODULE: gtk-im-context-simple
+QT_IM_MODULE: xim
+XMODIFIERS: @im=none
+IMSETTINGS_MODULE: none
+IMSETTINGS_INTEGRATE_DESKTOP: yes
+
+[ 1542618291.308609]: IMSettings-Daemon[1238]: INFO: Attempting to switch IM to none [lang=en_US.UTF-8, desktop=X-LXQt, update=false]
+[ 1542618291.534932]: IMSettings-Daemon[1238]: INFO:   no need to invoke any auxiliary process for none
+[ 1542618291.535058]: IMSettings-Daemon[1238]: INFO:   no need to invoke any main process for none
+[ 1542618291.535496]: IMSettings-GSettings backend[1238]: INFO: Setting up gtk-im-context-simple:xim as gtk+ immodule

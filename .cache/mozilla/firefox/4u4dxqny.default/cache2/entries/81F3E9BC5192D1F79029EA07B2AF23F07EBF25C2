@@ -1,0 +1,895 @@
+/* Tabellenstyles */
+/*----------------*/
+tr.titel {
+    font-weight: bold;
+    background: #E2C890;
+    color: #000000;
+    text-align: center;
+}
+
+tr.kopf {
+    font-weight: bold;
+    background: #F9EAAF;
+    color: #000000;
+}
+
+tr.normal {
+    background: #F9EAAF;
+    color: #000000;
+}
+
+tr.trennzeile {
+    background: #DDDDDD;
+    color: #000000;
+}
+
+tr.highlight {
+    background: #EEEEEE;
+    color: #000000;
+}
+
+tr.verlauf {
+    font-weight: bold;
+    color: #000000;
+    background-image: url(//static-cdn.ubuntu-de.org/img/wiki/heading.png);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+tr.kde-titel {
+    font-weight: bold;
+    background: #0057AE;
+    color: white;
+    text-align: center;
+}
+
+tr.kde-kopf {
+    font-weight: bold;
+    background: #418DD4;
+    color: white;
+}
+
+tr.kde-normal {
+    background: #418DD4;
+    color: white;
+}
+
+tr.kde-highlight {
+    background: #C0DAFF;
+    color: #000000;
+}
+
+tr.xfce-titel {
+    font-weight: bold;
+    background: #B3DEFD;
+    color:#000000;
+    text-align: center;
+}
+
+tr.xfce-kopf {
+    font-weight: bold;
+    background: #EFEFEF;
+    color: #000000;
+}
+
+tr.xfce-normal {
+    background: #EFEFEF;
+    color: #000000;
+}
+
+tr.xfce-highlight {
+    background: #EFEFEF;
+    color: #000000;
+}
+
+tr.lxde-titel {
+    font-weight: bold;
+    background: #212121;
+    color: white;
+    text-align: center;
+}
+
+tr.lxde-kopf {
+    font-weight: bold;
+    background: #0b60a3;
+    color: white;
+}
+
+tr.lxde-normal {
+    background: #0b60a3;
+    color: white;
+}
+
+tr.lxde-highlight {
+    background: #474747;
+    color: white;
+}
+
+tr.edu-titel {
+    font-weight: bold;
+    background: #9c0000;
+    color: white;
+    text-align: center;
+}
+
+tr.edu-kopf {
+    font-weight: bold;
+    background: #d39528;
+    color: white;
+}
+
+tr.edu-normal {
+    background: #e1dac6f;
+    color: white;
+}
+
+tr.edu-highlight {
+    background: #f4f2e7;
+    color: #000000;
+}
+
+tr.studio-titel {
+    font-weight: bold;
+    background: #171717;
+    color:#009bf9;
+    text-align: center;
+}
+
+tr.studio-kopf {
+    font-weight: bold;
+    background: #525252;
+    color:#009bf9;
+}
+
+tr.studio-normal {
+    font-weight: bold;
+    background: #525252;
+    color:#009bf9;
+}
+
+tr.studio-highlight {
+    background: #171717;
+    color:#FFFFFF;
+}
+
+/* Klasse f√ºr einen Befehl in Zelle */
+/*----------------------------------*/
+td.befehl{
+    background: #464646;
+    color: #FFFFFF;
+    font-family: monospace;
+}
+
+td.gruen{
+    background: #CCFF99;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+td.grau{
+    background: #eeeeee;
+    color: #000000;
+    text-align: center;
+}
+
+td.gelb{
+    background: #FFFF99;
+    color: #000000;
+    text-align: center;
+}
+
+td.rot{
+    background: #FFCC99;
+    color: #000000;
+    text-align: center;
+}
+
+/* Klasse f√ºr die Award Box */
+/*--------------------------*/
+div.award {
+  border: 1px solid #ffcc00;
+}
+
+div.award h3 {
+  background-color: #ffcc00;
+}
+
+div.ut_box {
+  border: 1px solid #DD4814;
+}
+
+div.ut_box h3 {
+  background-color: #DD4814;
+}
+
+/* Bilder f√ºr InterWiki */
+/*----------------------*/
+a.interwiki-archwiki {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/10/33/archwiki.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-askubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/49/16/askubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-atomicgamer {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/35/51/atomicgamer.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-bitbucket {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/41/45/bitbucket.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-blogspot {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/39/48/blogspot.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-brainstorm {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/23/40/brainstorm.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-bug {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/13/18/bug.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-calendar {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/54/07/calendar.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-canonical {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/18/16/canonical.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-canonicalblog {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/15/26/canonicalblog.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-canonicalsubdomain {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/03/52/canonicalsubdomain_.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-canonicalvoices {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/13/39/canonicalvoices.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-debian {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/04/09/debian.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-debianbug {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/34/29/debianbug.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-debian_de {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/22/40/debian_de.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-derstandard {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/41/11/derstandard.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-desura {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/57/08/desura.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-diaspora {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/35/39/diaspora.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-dropbox {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/39/20/dropbox.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-duckduckgo {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/11/06/duckduckgo.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ean {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/21/51/ean.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-edubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/50/17/edubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-fb {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/33/18/fb.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-freecode {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/48/11/freecode.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-freedesktop, a.interwiki-freedesktop-software {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/27/51/freedesktop.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-freenode {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/23/39/freenode.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-freshmeat {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/55/09/freshmeat.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-gameolith {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/50/15/gameolith.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-getdeb {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/15/18/getdeb.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-github {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/15/05/github.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-gnome {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/52/51/gnome.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-gnomeapps {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/27/03/gnomeapps.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-gnomeprojects {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/49/52/gnomeprojects.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-gog {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/47/04/gog.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-google {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/55/37/google.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-googlecode {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/36/18/googlecode.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-googlecode {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/36/18/googlecode.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-gnomelook {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/06/51/gnomelook.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-heise {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/08/09/heise.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-holarse {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/07/22/holarse.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-humble {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/37/18/humble.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-iawm {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/50/00/iawm.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-identica {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/22/18/identica.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.ikhaya {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/56/15/ikhaya.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-indiedb {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/30/45/indiedb.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-isbn {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/52/18/isbn.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ixquick {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/33/06/ixquick.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-kdebugs {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/53/05/kdebugs.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-kubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/49/17/kubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-kubuntu-de {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/36/16/kubuntu-de.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-kubuntu_doc {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/49/17/kubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-lastfm {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/00/18/lastfm.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-launchpad {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/11/18/launchpad.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-launchpad2 {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/58/19/launchpad2.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-launchpad_answers {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/11/18/launchpad.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+
+a.interwiki-lgdb {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/54/48/lgdb.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-liflg {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/23/22/liflg.jpg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-linuxgaming {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/15/18/linuxgaming.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-lpcode {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/59/26/lpcode.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-lpuser {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/22/18/lpuser.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-lubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/19/28/lubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-man {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/32/39/man.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-man_de {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/45/39/man_de.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ml {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/49/45/ml.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-moddb {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/32/28/moddb.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-moby {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/04/39/moby.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-mythbuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/06/48/mythbuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-opensuse {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/30/45/opensuse.jpg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-osm {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/34/45/osm.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-omgubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/52/19/omgubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-packages {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/37/47/packages.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.paste {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/32/07/paste.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-pdf {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/35/06/pdf.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-playdeb {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/55/09/playdeb.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-prolinux {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/32/09/prolinux.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-quakenet {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/57/05/quakenet.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-scope {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/39/13/scope.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-sourceforge {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/39/18/sourceforge.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-sourceforge2 {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/02/28/sourceforge2.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-startpage {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/00/23/startpage.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-steam {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/07/37/steam.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-team {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/04/18/team.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  color:#597A00;
+}
+
+a.interwiki-ticket {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/31/16/ticket.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-twitter {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/56/44/twitter.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-uappexplorer {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/25/22/uappexplorer.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/56/18/ubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntuapps {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/56/47/ubuntuapps.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntudiscourse {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/19/46/ubuntudiscourse.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntufridge {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/25/46/ubuntufridge.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntugnome {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/02/43/ubuntugnome.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntumate {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/31/13/ubuntumate.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubunturesources {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/00/46/ubunturesources.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntusub {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/06/46/ubuntusub.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-uf_forum {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/09/38/uf_forum.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-uf_member {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/48/38/uf_member.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-uf_thread {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/17/38/uf_thread.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntu_doc {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/52/40/ubuntu_doc.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntu_fr {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/31/40/ubuntu_fr.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntustudio {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/13/40/ubuntustudio.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-ubuntuone {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/17/05/ubuntuone.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-user {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/22/18/user.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-vimeo {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/16/29/vimeo.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-wikibooks {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/18/09/wikibooks.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-wikibooks_en {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/03/51/wikibooks_en.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-wikimedia {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/30/09/wikimedia.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-wikipedia {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/29/41/wikipedia.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-wikipedia_en {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/45/41/wikipedia_en.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-wordpress {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/25/40/wordpress.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-xfcedocs {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/24/28/xfcedocs.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-xubuntu {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/46/28/xubuntu.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+a.interwiki-youtube {
+  background-image: url(//media-cdn.ubuntu-de.org/wiki/attachments/59/47/youtube.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}§ÿªjá      [÷„[÷„?®ÅJ[÷Êó   -    :https://ubuntuusers.de/markup.css/?v=v0.17.6 necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAgEMIIIADCCBuigAwIBAgISA2mYZp47xF9RC48lhYD6WrbdMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xODA5MDEwMTMwNDNaFw0xODExMzAwMTMwNDNaMBkxFzAVBgNVBAMTDnVidW50dXVzZXJzLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzOBnFKGn0cKLcd6kH1l/boCkA/xR2u3wDpm9jL9FRbjKX+ITYWNKEocQQ7sffH4CKQi92DBuEsY1bzkXigd0fsngAqPZuvVhN6nKYqyhrCgJZgJs3r3tty3Kht9ptUpvWrq6QfAv7jX4M2S6XjjrzQKSBjYkYzse3uK89TKsUlsJ3HssgKKpMiCcxnT7kkDYhAL+kzozpChlwMtwUh6dIQAeZIIsUW9Y2o0XwEmyu5UDwyh5PC71wF4nRUVDpuwVXaSDTrWN7iXVyppjbd4ynt2irRdgGJzwpXmozqr98J9aVEW8GrJKRGLHMKAJpso03CXSLVF7YMcAWLiw+B+NWW9uM/z8Gq4afq/YH3akLloDHSBWTZd+rFRx9QSozRgWdBdpVPcqIy4K8Iebz/JSlOdpfcQoC8NjIejfYEr/gozmP38KQYckNMqdqC9W/9kpLM9ARnX0dxUt+1qCGfrvx3pUZH7JMixmLFha2YdGOcZ0uh67s2oxLi56yKyhNeIsVZKHgFcz8G6FocD2r6pMnNH8NKx48l4qf1OXfZ4XWBT/CR9Yy+B6e8jeJDJbJxGIjSZ86qvF6p8mrLpxKVrRqJtJ3RF8x4Sc48lW7IRS0Tyk9fsbTzbxfCEbiB4K9uSNV1mqz4oBSSw2rsMr2EQxM0jlv2En99w8Lwus7ZGfydUCAwEAAaOCBA8wggQLMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU6mNiF9tNYmpakvUOqiO2EMutKyswHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzCCARAGA1UdEQSCAQcwggEDghRhZG1pbi51YnVudHV1c2Vycy5kZYIUZm9ydW0udWJ1bnR1dXNlcnMuZGWCFWlraGF5YS51YnVudHV1c2Vycy5kZYIVbXVtYmxlLnVidW50dXVzZXJzLmRlghRwYXN0ZS51YnVudHV1c2Vycy5kZYIVcGxhbmV0LnVidW50dXVzZXJzLmRlghlzdGF0aWN3aWtpLnVidW50dXVzZXJzLmRlghN0b3VyLnVidW50dXVzZXJzLmRlghF0dC51YnVudHV1c2Vycy5kZYIOdWJ1bnR1dXNlcnMuZGWCE3dpa2kudWJ1bnR1dXNlcnMuZGWCEnd3dy51YnVudHV1c2Vycy5kZTCB/gYDVR0gBIH2MIHzMAgGBmeBDAECATCB5gYLKwYBBAGC3xMBAQEwgdYwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIGrBggrBgEFBQcCAjCBngyBm1RoaXMgQ2VydGlmaWNhdGUgbWF5IG9ubHkgYmUgcmVsaWVkIHVwb24gYnkgUmVseWluZyBQYXJ0aWVzIGFuZCBvbmx5IGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgQ2VydGlmaWNhdGUgUG9saWN5IGZvdW5kIGF0IGh0dHBzOi8vbGV0c2VuY3J5cHQub3JnL3JlcG9zaXRvcnkvMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHcAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAFlkvfiNgAABAMASDBGAiEA3r/Kl4N823RPM+Cpd5NcjlO2IRBUbklhMZHPRI76iFQCIQDowl56DSxSfwY1oJdIAUtETDJgywVkP9nz0Z60HpdFmAB1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 request-method GET request-Cookie pjf1jN9fRf2N3F6MagyQZx5MgQ0= response-head HTTP/1.1 200 OK
+Date: Mon, 29 Oct 2018 10:38:13 GMT
+Content-Length: 22627
+Expires: Mon, 29 Oct 2018 10:53:13 GMT
+Vary: Cookie
+Last-Modified: Mon, 29 Oct 2018 10:38:13 GMT
+ETag: "0682db241dd319f088f51a675b31046f"
+Cache-Control: max-age=900
+X-Frame-Options: DENY
+Content-Type: text/css
+Strict-Transport-Security: max-age=15768000;
+ original-response-headers Date: Mon, 29 Oct 2018 10:38:13 GMT
+Content-Length: 22627
+Expires: Mon, 29 Oct 2018 10:53:13 GMT
+Vary: Cookie
+Last-Modified: Mon, 29 Oct 2018 10:38:13 GMT
+ETag: "0682db241dd319f088f51a675b31046f"
+Cache-Control: max-age=900
+X-Frame-Options: DENY
+Content-Type: text/css
+Strict-Transport-Security: max-age=15768000;
+ uncompressed-len 0 net-response-time-onstart 1589 net-response-time-onstop 1590   Xc

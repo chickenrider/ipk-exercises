@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="de" xml:lang="de">
+<head>
+    <title>IPI (2018): C++ Quellcode</title>
+    <link rel="shortcut icon" href="https://elearning2.uni-heidelberg.de/theme/image.php/more/theme/1538392260/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, IPI (2018): C++ Quellcode" />
+<link rel="stylesheet" type="text/css" href="https://elearning2.uni-heidelberg.de/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://elearning2.uni-heidelberg.de/theme/styles.php/more/1538392260_1/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/elearning2.uni-heidelberg.de","sesskey":"JzIxDVGF2h","themerev":"1538392260","slasharguments":1,"theme":"more","iconsystemmodule":"core\/icon_system_standard","jsrev":"1538043940","admin":"admin","svgicons":true,"usertimezone":"Europa\/Berlin","contextid":834168};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/elearning2.uni-heidelberg.de\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/elearning2.uni-heidelberg.de\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/elearning2.uni-heidelberg.de\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/elearning2.uni-heidelberg.de\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/elearning2.uni-heidelberg.de\/theme\/yui_combo.php?m\/1538043940\/","combine":true,"comboBase":"https:\/\/elearning2.uni-heidelberg.de\/theme\/yui_combo.php?","ext":false,"root":"m\/1538043940\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/elearning2.uni-heidelberg.de\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/elearning2.uni-heidelberg.de\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1538043940\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/elearning2.uni-heidelberg.de\/lib\/javascript.php\/1538043940\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/elearning2.uni-heidelberg.de\/lib\/javascript.php\/1538043940\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-mod-folder-view" class="format-weeks  path-mod path-mod-folder gecko dir-ltr lang-de yui-skin-sam yui3-skin-sam elearning2-uni-heidelberg-de pagelayout-incourse course-19653 context-834168 cmid-572830 category-976 has-region-side-pre used-region-side-pre has-region-side-post empty-region-side-post side-pre-only">
+
+<div class="skiplinks">
+    <a href="#maincontent" class="skip">Zum Hauptinhalt</a>
+</div><script type="text/javascript" src="https://elearning2.uni-heidelberg.de/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<header role="banner" class="navbar navbar-fixed-top navbar-inverse moodle-has-zindex">
+    <nav role="navigation" class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" title="Startseite" href="https://elearning2.uni-heidelberg.de/">elearning2</a>            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></a>            <div class="usermenu"><div class="moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <ul class="menubar" id="action-menu-0-menubar" role="menubar">
+
+            <!--
+
+            --><!--
+
+            --><li role="presentation"><a href="#" class=" toggle-display textmenu" id="action-menu-toggle-0" title="" role="menuitem"><span class="userbutton"><span class="usertext mr-1">Jonas Roos</span><span class="avatars"><span class="avatar current"><img src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/u/f2" alt="Nutzerbild Jonas Roos" title="Nutzerbild Jonas Roos" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+</li>
+
+        </ul>
+
+
+        <ul class="menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br">
+            <li role="presentation">    <a href="https://elearning2.uni-heidelberg.de/my/" class="icon menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="Dashboard" title="Dashboard" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/dashboard" /><span class="menu-action-text" id="actionmenuaction-1">Dashboard</span></a>
+
+
+
+
+
+</li><li role="presentation">
+<span class="filler">&nbsp;</span>
+
+
+
+</li><li role="presentation">    <a href="https://elearning2.uni-heidelberg.de/user/profile.php?id=58445" class="icon menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="Profil" title="Profil" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/user" /><span class="menu-action-text" id="actionmenuaction-2">Profil</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="https://elearning2.uni-heidelberg.de/grade/report/overview/index.php" class="icon menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="Bewertungen" title="Bewertungen" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/t/grades" /><span class="menu-action-text" id="actionmenuaction-3">Bewertungen</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="https://elearning2.uni-heidelberg.de/user/preferences.php" class="icon menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-4"><img class="icon " alt="Einstellungen" title="Einstellungen" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/t/preferences" /><span class="menu-action-text" id="actionmenuaction-4">Einstellungen</span></a>
+
+
+
+
+
+</li><li role="presentation">
+<span class="filler">&nbsp;</span>
+
+
+
+</li><li role="presentation">    <a href="https://elearning2.uni-heidelberg.de/login/logout.php?sesskey=JzIxDVGF2h" class="icon menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="Logout" title="Logout" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/a/logout" /><span class="menu-action-text" id="actionmenuaction-5">Logout</span></a>
+
+
+
+
+
+</li>
+        </ul>
+</div></div>            <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="58445"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5bea9b320f8485bea9b31f2c2533"
+        aria-haspopup="true"
+        aria-label="Mitteilungsfenster ohne neue Benachrichtigungen anzeigen"
+        tabindex="0">
+                <img class="icon " alt="Systemmitteilungen" title="Systemmitteilungen" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/notifications" />
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-5bea9b320f8485bea9b31f2c2533"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Systemmitteilungen"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Systemmitteilungen</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Alle als gelesen markieren"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><img class="icon " alt="Alle als gelesen markieren" title="Alle als gelesen markieren" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/t/markasread" /></span>
+            <span class="loading-icon"><img class="icon " alt="Wird geladen" title="Wird geladen" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/loading" /></span>
+        </a>
+        <a href="https://elearning2.uni-heidelberg.de/message/notificationpreferences.php?userid=58445"
+           title="Systemmitteilungen">
+            <img class="icon " alt="Systemmitteilungen" title="Systemmitteilungen" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/settings" />
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Keine Systemmitteilungen</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Wird geladen" title="Wird geladen" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://elearning2.uni-heidelberg.de/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Alle anzeigen</div>
+                    </div>
+                </a>
+    </div>
+</div>                        <div class="nav-collapse collapse">
+                <ul class="nav"><li class="dropdown langmenu"><a href="" class="dropdown-toggle" data-toggle="dropdown" title="Sprache">Deutsch ‎(de)‎<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="Deutsch ‎(de)‎" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830&amp;lang=de">Deutsch ‎(de)‎</a></li><li><a title="English ‎(en)‎" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830&amp;lang=en">English ‎(en)‎</a></li><li><a title="Español - Internacional ‎(es)‎" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830&amp;lang=es">Español - Internacional ‎(es)‎</a></li><li><a title="Français ‎(fr)‎" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830&amp;lang=fr">Français ‎(fr)‎</a></li><li><a title="Italiano ‎(it)‎" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830&amp;lang=it">Italiano ‎(it)‎</a></li></ul></ul>                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div id="page" class="container-fluid">
+    <header id="page-header" class="clearfix"><div class="page-context-header"><div class="page-header-headings"><h1>Einführung in die Praktische Informatik (IPI)</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><span class="accesshide" id="navbar-label">Seitenpfad</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning2.uni-heidelberg.de/"><span itemprop="title">Startseite</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span tabindex="0">Meine Kurse</span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning2.uni-heidelberg.de/course/index.php?categoryid=918"><span itemprop="title">Wintersemester 18/19</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning2.uni-heidelberg.de/course/index.php?categoryid=974"><span itemprop="title">Fakultät für Mathematik und Informatik</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning2.uni-heidelberg.de/course/index.php?categoryid=976"><span itemprop="title">Informatik</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Einführung in die Praktische Informatik (IPI)" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653"><span itemprop="title">IPI (2018)</span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653#section-0"><span itemprop="title"> </span></a></span> <span class="divider"> <span class="accesshide " ><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">&#x25BA;</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Verzeichnis" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830"><span itemprop="title">C++ Quellcode</span></a></span></li></ul></nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></header>    <div id="page-content" class="row-fluid">
+        <div id="region-main-box" class="span9 desktop-first-column">
+            <div class="row-fluid">
+                <section id="region-main" class="span8 pull-right">
+                    <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><h2>C++ Quellcode</h2><div id="intro" class="box generalbox"><div class="no-overflow"><p>In diesem Verzeichnis finden Sie C++ Quellcode begleitend zur Vorlesung.</p></div></div><div class="box generalbox foldertree"><div id="folder_tree0" class="filemanager"><ul><li><div class="fp-filename-icon"><span class="fp-icon"><img class="icon " alt="" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/folder-24" /></span><span class="fp-filename"></span></div><ul><li><div class="fp-filename-icon"><span class="fp-icon"><img class="icon " alt="Kapitel 2 - Funktionale Programmierung" title="Kapitel 2 - Funktionale Programmierung" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/folder-24" /></span><span class="fp-filename">Kapitel 2 - Funktionale Programmierung</span></div><ul><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/absolut.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="absolut.cc" title="absolut.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">absolut.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/alles_funktioniert.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="alles_funktioniert.cc" title="alles_funktioniert.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">alles_funktioniert.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/erstes.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="erstes.cc" title="erstes.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">erstes.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/fakultaet.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="fakultaet.cc" title="fakultaet.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">fakultaet.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/fakultaetiter.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="fakultaetiter.cc" title="fakultaetiter.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">fakultaetiter.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/faukultaetiter_mit_ausgabe.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="faukultaetiter_mit_ausgabe.cc" title="faukultaetiter_mit_ausgabe.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">faukultaetiter_mit_ausgabe.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/fcpp.hh?forcedownload=1"><span class="fp-icon"><img class="icon " alt="fcpp.hh" title="fcpp.hh" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">fcpp.hh</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/fibiter.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="fibiter.cc" title="fibiter.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">fibiter.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/fibonacci.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="fibonacci.cc" title="fibonacci.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">fibonacci.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/ggT.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="ggT.cc" title="ggT.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">ggT.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/newton.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="newton.cc" title="newton.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">newton.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/quadrat.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="quadrat.cc" title="quadrat.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">quadrat.cc</span></a></span></li><li><span class="fp-filename-icon"><a href="https://elearning2.uni-heidelberg.de/pluginfile.php/834168/mod_folder/content/0/Kapitel%202%20-%20Funktionale%20Programmierung/wechselgeld.cc?forcedownload=1"><span class="fp-icon"><img class="icon " alt="wechselgeld.cc" title="wechselgeld.cc" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24" /></span><span class="fp-filename">wechselgeld.cc</span></a></span></li></ul></li></ul></li></ul></div></div><div class="box generalbox folderbuttons"><div class="singlebutton"><form method="post" action="https://elearning2.uni-heidelberg.de/mod/folder/download_folder.php"><div><input type="submit" value="Verzeichnis herunterladen" /><input type="hidden" name="id" value="572830" /><input type="hidden" name="sesskey" value="JzIxDVGF2h" /></div></form></div></div></div><div class="m-t-2 m-b-1">
+<div class="row-fluid rtl-compatible">
+    <div class="span4">        <div class="pull-left">
+                <a href="https://elearning2.uni-heidelberg.de/mod/resource/view.php?id=554893&forceview=1" id="prev-activity-link" class=""  classes="btn btn-link"  title="Skript vom Vorjahr" >&#x25C4; Skript vom Vorjahr</a>
+
+        </div>
+</div>
+    <div class="span4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://elearning2.uni-heidelberg.de/course/jumpto.php" class="form-inline" id="url_select_f5bea9b31f2c2536">
+        <input type="hidden" name="sesskey" value="JzIxDVGF2h">
+            <label for="jump-to-activity" class="sr-only">
+                Direkt zu:
+            </label>
+        <select id="jump-to-activity"  id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected>Direkt zu:</option>
+                    <option value="/mod/page/view.php?id=569097&amp;forceview=1" >Übersicht Übungsgruppen</option>
+                    <option value="/mod/resource/view.php?id=554893&amp;forceview=1" >Skript vom Vorjahr</option>
+                    <option value="/mod/forum/view.php?id=553786&amp;forceview=1" >Ankündigungen</option>
+                    <option value="/mod/forum/view.php?id=553911&amp;forceview=1" >Generelle Fragen</option>
+                    <option value="/mod/forum/view.php?id=554120&amp;forceview=1" >Wechselbörse</option>
+                    <option value="/mod/folder/view.php?id=554068&amp;forceview=1" >Kurs-Unterlagen</option>
+                    <option value="/mod/assign/view.php?id=553886&amp;forceview=1" >0. Übungszettel</option>
+                    <option value="/mod/forum/view.php?id=554070&amp;forceview=1" >Übungsblatt - Forum</option>
+                    <option value="/mod/folder/view.php?id=554077&amp;forceview=1" >Kurs-Unterlagen</option>
+                    <option value="/mod/assign/view.php?id=571189&amp;forceview=1" >1. Übungsblatt</option>
+                    <option value="/mod/forum/view.php?id=554079&amp;forceview=1" >Übungsblatt - Forum</option>
+                    <option value="/mod/folder/view.php?id=570942&amp;forceview=1" >Kurs-Unterlagen</option>
+                    <option value="/mod/assign/view.php?id=570938&amp;forceview=1" >2. Übungsblatt</option>
+                    <option value="/mod/forum/view.php?id=570941&amp;forceview=1" >Übungsblatt - Forum</option>
+                    <option value="/mod/folder/view.php?id=572835&amp;forceview=1" >Kurs-Unterlagen</option>
+                    <option value="/mod/assign/view.php?id=572836&amp;forceview=1" >3. Übungsblatt</option>
+                    <option value="/mod/forum/view.php?id=572837&amp;forceview=1" >Übungsblatt - Forum</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Start">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="span4">        <div class="pull-right">
+                <a href="https://elearning2.uni-heidelberg.de/mod/forum/view.php?id=553786&forceview=1" id="next-activity-link" class=""  classes="btn btn-link"  title="Ankündigungen" >Ankündigungen &#x25BA;</a>
+
+        </div>
+</div>
+</div>
+</div>                </section>
+                <aside id="block-region-side-pre" class="span4 desktop-first-column block-region" data-blockregion="side-pre" data-droptarget="1"><a class="skip skip-block" id="fsb-1" href="#sb-1">Navigation überspringen</a><div id="inst4" class="block_navigation  block" role="navigation" data-block="navigation" data-instanceid="4" aria-labelledby="instance-4-header" data-dockable="1"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-4-header">Navigation</h2></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" aria-labelledby="label_1_1"><p class="tree_item branch navigation_node" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c251_group" data-collapsible="false"><a tabindex="-1" id="label_1_1" href="https://elearning2.uni-heidelberg.de/">Startseite</a></p><ul id="random5bea9b31f2c251_group" role="group"><li class="type_setting depth_2 item_with_icon" aria-labelledby="label_2_2"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_2_2" href="https://elearning2.uni-heidelberg.de/my/"><img class="icon navicon" alt="" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/dashboard" /><span class="item-content-wrap">Dashboard</span></a></p></li><li class="type_course depth_2 contains_branch" aria-labelledby="label_2_3"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random5bea9b31f2c253_group"><span tabindex="-1" id="label_2_3" title="elearning2.uni-heidelberg.de">Website</span></p><ul id="random5bea9b31f2c253_group" role="group" aria-hidden="true"><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_5"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_5" href="https://elearning2.uni-heidelberg.de/calendar/view.php?view=month&amp;course=19653"><img class="icon navicon" alt="" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/calendar" /><span class="item-content-wrap">Kalender</span></a></p></li><li class="type_activity depth_3 item_with_icon" aria-labelledby="label_3_7"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_7" title="Datei" href="https://elearning2.uni-heidelberg.de/mod/resource/view.php?id=152"><img class="icon navicon" alt="Datei" title="Datei" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/pdf-24" /><span class="item-content-wrap">Hinweis zum Datenschutz</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_10"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c256_group"><span tabindex="-1" id="label_2_10">Meine Kurse</span></p><ul id="random5bea9b31f2c256_group" role="group"><li class="type_unknown depth_3 contains_branch" aria-labelledby="label_3_11"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c257_group"><span tabindex="-1" id="label_3_11">Wintersemester 18/19</span></p><ul id="random5bea9b31f2c257_group" role="group"><li class="type_unknown depth_4 contains_branch" aria-labelledby="label_4_12"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c258_group"><span tabindex="-1" id="label_4_12">Fakultät für Mathematik und Informatik</span></p><ul id="random5bea9b31f2c258_group" role="group"><li class="type_unknown depth_5 contains_branch" aria-labelledby="label_5_13"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c259_group"><span tabindex="-1" id="label_5_13">Informatik</span></p><ul id="random5bea9b31f2c259_group" role="group"><li class="type_course depth_6 contains_branch" aria-labelledby="label_6_14"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c2510_group"><a tabindex="-1" id="label_6_14" title="Einführung in die Praktische Informatik (IPI)" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653">IPI (2018)</a></p><ul id="random5bea9b31f2c2510_group" role="group"><li class="type_container depth_7 contains_branch" aria-labelledby="label_7_15"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random5bea9b31f2c2511_group"><a tabindex="-1" id="label_7_15" href="https://elearning2.uni-heidelberg.de/user/index.php?id=19653">Teilnehmer/innen</a></p><ul id="random5bea9b31f2c2511_group" role="group" aria-hidden="true"><li class="type_user depth_8 item_with_icon" aria-labelledby="label_8_16"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_16" href="https://elearning2.uni-heidelberg.de/user/view.php?id=58445&amp;course=19653"><img class="icon navicon" alt="" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/navigationitem" /><span class="item-content-wrap">Jonas Roos</span></a></p></li></ul></li><li class="type_setting depth_7 item_with_icon" aria-labelledby="label_7_17"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_7_17" href="https://elearning2.uni-heidelberg.de/grade/report/index.php?id=19653"><img class="icon navicon" alt="" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/grades" /><span class="item-content-wrap">Bewertungen</span></a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_18"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5bea9b31f2c2514_group"><a tabindex="-1" id="label_7_18" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653#section-0"> </a></p><ul id="random5bea9b31f2c2514_group" role="group"><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_21"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_21" title="Textseite" href="https://elearning2.uni-heidelberg.de/mod/page/view.php?id=569097"><img class="icon navicon" alt="Textseite" title="Textseite" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/page/1538392260/icon" /><span class="item-content-wrap">Übersicht Übungsgruppen</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_23"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_23" title="Datei" href="https://elearning2.uni-heidelberg.de/mod/resource/view.php?id=554893"><img class="icon navicon" alt="Datei" title="Datei" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/pdf-24" /><span class="item-content-wrap">Skript vom Vorjahr</span></a></p></li><li class="type_activity depth_8 item_with_icon current_branch" aria-labelledby="label_8_24"><p class="tree_item hasicon active_tree_node" role="treeitem"><a tabindex="-1" id="label_8_24" title="Verzeichnis" href="https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830"><img class="icon navicon" alt="Verzeichnis" title="Verzeichnis" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/folder/1538392260/icon" /><span class="item-content-wrap">C++ Quellcode</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_26"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_26" title="Forum" href="https://elearning2.uni-heidelberg.de/mod/forum/view.php?id=553786"><img class="icon navicon" alt="Forum" title="Forum" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/forum/1538392260/icon" /><span class="item-content-wrap">Ankündigungen</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_27"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_27" title="Forum" href="https://elearning2.uni-heidelberg.de/mod/forum/view.php?id=553911"><img class="icon navicon" alt="Forum" title="Forum" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/forum/1538392260/icon" /><span class="item-content-wrap">Generelle Fragen</span></a></p></li><li class="type_activity depth_8 item_with_icon" aria-labelledby="label_8_28"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_8_28" title="Forum" href="https://elearning2.uni-heidelberg.de/mod/forum/view.php?id=554120"><img class="icon navicon" alt="Forum" title="Forum" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/forum/1538392260/icon" /><span class="item-content-wrap">Wechselbörse</span></a></p></li></ul></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_29"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_305362" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_305362" data-node-key="305362" data-node-type="30"><a tabindex="-1" id="label_7_29" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653#section-2">15. Oktober - 21. Oktober</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_30"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_305365" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_305365" data-node-key="305365" data-node-type="30"><a tabindex="-1" id="label_7_30" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653#section-3">22. Oktober - 28. Oktober</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_31"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_305366" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_305366" data-node-key="305366" data-node-type="30"><a tabindex="-1" id="label_7_31" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653#section-4">29. Oktober - 4. November</a></p></li><li class="type_structure depth_7 contains_branch" aria-labelledby="label_7_32"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_305367" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_305367" data-node-key="305367" data-node-type="30"><a tabindex="-1" id="label_7_32" href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653#section-5">5. November - 11. November</a></p></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></div></div><span class="skip-block-to" id="sb-1"></span><a class="skip skip-block" id="fsb-2" href="#sb-2">Einstellungen überspringen</a><div id="inst5" class="block_settings  block" role="navigation" data-block="settings" data-instanceid="5" aria-labelledby="instance-5-header" data-dockable="1"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-5-header">Einstellungen</h2></div></div><div class="content"><div id="settingsnav" class="box block_tree_box"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/site_admin_loader"><li class="type_course depth_1 contains_branch" tabindex="-1" aria-labelledby="label_1_1"><p class="tree_item root_node tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random5bea9b31f2c2521_group"><span tabindex="0">Kurs-Administration</span></p><ul id="random5bea9b31f2c2521_group" role="group" aria-hidden="true"><li class="type_setting depth_2 item_with_icon" tabindex="-1" aria-labelledby="label_2_1"><p class="tree_item hasicon tree_item leaf" role="treeitem"><a href="https://elearning2.uni-heidelberg.de/enrol/self/unenrolself.php?enrolid=42092"><img class="icon navicon" alt="" src="https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/user" />Abmelden aus 'IPI (2018)'</a></p></li></ul></li></ul></div></div></div><span class="skip-block-to" id="sb-2"></span></aside>            </div>
+        </div>
+        <aside id="block-region-side-post" class="span3 pull-right block-region" data-blockregion="side-post" data-droptarget="1"></aside>    </div>
+
+    <footer id="page-footer">
+        <div id="course-footer"></div>
+        <p class="helplink"></p>
+        <div class="footnote text-center"><div class="text_to_html"><p><a href="https://www.uni-heidelberg.de/datenschutzerklaerung_web.html" target="_blank" rel="noreferrer noopener">Datenschutzerklärung der Universität Heidelberg<br /></a></p></div></div><div class="logininfo">Sie sind angemeldet als <a href="https://elearning2.uni-heidelberg.de/user/profile.php?id=58445" title="Profil anzeigen">Jonas Roos</a> (<a href="https://elearning2.uni-heidelberg.de/login/logout.php?sesskey=JzIxDVGF2h">Logout</a>)</div><div class="homelink"><a href="https://elearning2.uni-heidelberg.de/course/view.php?id=19653">IPI (2018)</a></div><div class="policiesfooter"><a href="https://elearning2.uni-heidelberg.de/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Felearning2.uni-heidelberg.de%2Fmod%2Ffolder%2Fview.php%3Fid%3D572830">Datenschutzinformation</a></div>    </footer>
+
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://elearning2.uni-heidelberg.de/lib/requirejs.php/1538043940/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://elearning2.uni-heidelberg.de/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("de",{
+ "Play": "Wiedergabe",
+ "Pause": "Pause",
+ "Replay": "Erneut abspielen",
+ "Current Time": "Aktueller Zeitpunkt",
+ "Duration Time": "Dauer",
+ "Remaining Time": "Verbleibende Zeit",
+ "Stream Type": "Streamtyp",
+ "LIVE": "LIVE",
+ "Loaded": "Geladen",
+ "Progress": "Status",
+ "Fullscreen": "Vollbild",
+ "Non-Fullscreen": "Kein Vollbild",
+ "Mute": "Ton aus",
+ "Unmute": "Ton ein",
+ "Playback Rate": "Wiedergabegeschwindigkeit",
+ "Subtitles": "Untertitel",
+ "subtitles off": "Untertitel aus",
+ "Captions": "Untertitel",
+ "captions off": "Untertitel aus",
+ "Chapters": "Kapitel",
+ "You aborted the media playback": "Sie haben die Videowiedergabe abgebrochen.",
+ "A network error caused the media download to fail part-way.": "Der Videodownload ist aufgrund eines Netzwerkfehlers fehlgeschlagen.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Das Video konnte nicht geladen werden, da entweder ein Server- oder Netzwerkfehler auftrat oder das Format nicht unterstützt wird.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Die Videowiedergabe wurde entweder wegen eines Problems mit einem beschädigten Video oder wegen verwendeten Funktionen, die vom Browser nicht unterstützt werden, abgebrochen.",
+ "No compatible source was found for this media.": "Für dieses Video wurde keine kompatible Quelle gefunden.",
+ "Play Video": "Video abspielen",
+ "Close": "Schließen",
+ "Modal Window": "Modales Fenster",
+ "This is a modal window": "Dies ist ein modales Fenster",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Durch Drücken der Esc-Taste bzw. Betätigung der Schaltfläche \"Schließen\" wird dieses modale Fenster geschlossen.",
+ ", opens captions settings dialog": ", öffnet Einstellungen für Untertitel",
+ ", opens subtitles settings dialog": ", öffnet Einstellungen für Untertitel",
+ ", selected": ", ausgewählt",
+ "captions settings": "Untertiteleinstellungen",
+ "subtitles settings": "Untertiteleinstellungen",
+ "descriptions settings": "Einstellungen für Beschreibungen",
+ "Close Modal Dialog": "Modales Fenster schließen",
+ "Descriptions": "Beschreibungen",
+ "descriptions off": "Beschreibungen aus",
+ "The media is encrypted and we do not have the keys to decrypt it.": "Die Entschlüsselungsschlüssel für den verschlüsselten Medieninhalt sind nicht verfügbar.",
+ ", opens descriptions settings dialog": ", öffnet Einstellungen für Beschreibungen",
+ "Audio Track": "Tonspur",
+ "Text": "Schrift",
+ "White": "Weiß",
+ "Black": "Schwarz",
+ "Red": "Rot",
+ "Green": "Grün",
+ "Blue": "Blau",
+ "Yellow": "Gelb",
+ "Magenta": "Magenta",
+ "Cyan": "Türkis",
+ "Background": "Hintergrund",
+ "Window": "Fenster",
+ "Transparent": "Durchsichtig",
+ "Semi-Transparent": "Halbdurchsichtig",
+ "Opaque": "Undurchsictig",
+ "Font Size": "Schriftgröße",
+ "Text Edge Style": "Textkantenstil",
+ "None": "Kein",
+ "Raised": "Erhoben",
+ "Depressed": "Gedrückt",
+ "Uniform": "Uniform",
+ "Dropshadow": "Schlagschatten",
+ "Font Family": "Schristfamilie",
+ "Proportional Sans-Serif": "Proportionale Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportionale Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Zwanglos",
+ "Script": "Schreibeschrift",
+ "Small Caps": "Small-Caps",
+ "Reset": "Zurücksetzen",
+ "restore all settings to the default values": "Alle Einstellungen auf die Standardwerte zurücksetzen",
+ "Done": "Fertig",
+ "Caption Settings Dialog": "Einstellungsdialog für Untertitel",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Anfang des Dialogfensters. Esc bricht ab und schließt das Fenster.",
+ "End of dialog window.": "Ende des Dialogfensters.",
+ "Audio Player": "Audio-Player",
+ "Video Player": "Video-Player",
+ "Progress Bar": "Forschrittsbalken",
+ "progress bar timing: currentTime={1} duration={2}": "{1} von {2}",
+ "Volume Level": "Lautstärkestufe"
+});
+
+    });
+});;
+require(["block_navigation/navblock"], function(amd) { amd.init("4"); });;
+require(["block_settings/settingsblock"], function(amd) { amd.init("5", null); });;
+
+require(['core/yui'], function(Y) {
+    M.util.init_skiplink(Y);
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select5bea9b31f2c2525').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5bea9b31f2c2524').submit();
+        }
+    });
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-actionmenu', function() {
+        M.core.actionmenu.init();
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select5bea9b31f2c2535').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5bea9b31f2c2534').submit();
+        }
+    });
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                $('#url_select_f5bea9b31f2c2536').submit();
+            });
+        });
+    ;
+require(["core/notification"], function(amd) { amd.init(834168, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"mod_folder":{"name":"mod_folder","fullpath":"https:\/\/elearning2.uni-heidelberg.de\/lib\/javascript.php\/1538043940\/mod\/folder\/module.js","requires":[]}});
+
+//]]>
+</script>
+<script type="text/javascript" src="https://elearning2.uni-heidelberg.de/theme/javascript.php/more/1538392260/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Zuletzt ge\u00e4ndert","name":"Name","error":"Fehler","info":"Informationen","yes":"Ja","no":"Nein","ok":"OK","viewallcourses":"Alle Kurse zeigen","cancel":"Abbrechen","morehelp":"Weitere Hilfe","loadinghelp":"Wird geladen...","confirm":"Best\u00e4tigen","areyousure":"Sind Sie sicher?","closebuttontitle":"Schlie\u00dfen","unknownerror":"Unbekannter Fehler"},"repository":{"type":"Typ","size":"Gr\u00f6\u00dfe","invalidjson":"Ung\u00fcltiger JSON-Text","nofilesattached":"Keine Datei","filepicker":"Dateiauswahl","logout":"Abmelden","nofilesavailable":"Keine Dateien vorhanden","norepositoriesavailable":"Keine Ihrer aktuellen Repositories kann Dateien im n\u00f6tigen Format liefern","fileexistsdialogheader":"Datei bereits vorhanden","fileexistsdialog_editor":"Eine Datei mit diesem Namen wurde bereits an den Text angeh\u00e4ngt, den Sie gerade bearbeiten","fileexistsdialog_filemanager":"Eine Datei mit diesem Namen wurde bereits an den Text angeh\u00e4ngt","renameto":"Nach '{$a}' umbenennen","referencesexist":"{$a} Aliase\/Verkn\u00fcpfungen zu dieser Datei","select":"W\u00e4hlen Sie"},"admin":{"confirmdeletecomments":"M\u00f6chten Sie die Kommentare wirklich l\u00f6schen?","confirmation":"Best\u00e4tigung"},"block":{"addtodock":"Block ins Dock bewegen","undockitem":"Diesen Block abdocken","dockblock":"Block {$a} ins Dock","undockblock":"'{$a}' abdocken","undockall":"Alles abdocken","hidedockpanel":"Dock verbergen","hidepanel":"Steuerung verbergen"},"langconfig":{"thisdirectionvertical":"btt"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"de"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_block_hider(Y, {"id":"inst4","title":"Navigation","preference":"block4hidden","tooltipVisible":"Block Navigation verbergen","tooltipHidden":"Block Navigation anzeigen"});
+M.util.init_block_hider(Y, {"id":"inst5","title":"Einstellungen","preference":"block5hidden","tooltipVisible":"Block Einstellungen verbergen","tooltipHidden":"Block Einstellungen anzeigen"});
+ M.util.js_pending('random5bea9b31f2c2539'); Y.use('mod_folder', function(Y) { M.mod_folder.init_tree(Y, "folder_tree0", false);  M.util.js_complete('random5bea9b31f2c2539'); });
+ M.util.js_pending('random5bea9b31f2c2540'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5bea9b31f2c2540'); });
+})();
+//]]>
+</script>
+
+</div>
+</body>
+</html>
+�����      [�1[�<?�,a       C    :https://elearning2.uni-heidelberg.de/mod/folder/view.php?id=572830 necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZIMIIGRDCCBSygAwIBAgIHGFXgpGITHDANBgkqhkiG9w0BAQsFADCBrjELMAkGA1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzETMBEGA1UEBxMKSGVpZGVsYmVyZzEgMB4GA1UEChMXVW5pdmVyc2l0YWV0IEhlaWRlbGJlcmcxDDAKBgNVBAsTA3VuaTETMBEGA1UEAxMKVW5pLUhEMi1DQTEoMCYGCSqGSIb3DQEJARYZcGtpQHVyei51bmktaGVpZGVsYmVyZy5kZTAeFw0xNDEwMDkxMDI3MzNaFw0xOTA3MDkyMzU5MDBaMIGWMQswCQYDVQQGEwJERTEbMBkGA1UECBMSQmFkZW4tV3VlcnR0ZW1iZXJnMRMwEQYDVQQHEwpIZWlkZWxiZXJnMSAwHgYDVQQKExdVbml2ZXJzaXRhZXQgSGVpZGVsYmVyZzEMMAoGA1UECxMDdXJ6MSUwIwYDVQQDExxlbGVhcm5pbmcyLnVuaS1oZWlkZWxiZXJnLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAooR3VIF/GpXOfwL2NPE/7aY7x3t8mk/NeJvvwFSWidp0+1NCgeU29/SQpPpL3Q7RoifAwzkiTqOxqWm+YlVBJj6/JHQcevkPJ+LF8pQ3mWpBbGLqseJNytQU4pH8pTJEi/5/Ybqe3vBKRZDJHEqoUsOc/kEdutKPogAmLe8uQGwAbi3old8uCGIfYEzmIh1iGtASLHc2+sa5za+d7EBxQI/48g1nn/HPnxvlJqvAa2KF6wOU6BZrjrHP263tQ7kZ9yg5vkKOJxKui0DSHByLfe5qB/TFrSk8FwIvydtt69KH50reuhvq1xxsnzvtH1rY5uoiW0xHJO/W+Pzh3X6q9wIDAQABo4ICezCCAncwTwYDVR0gBEgwRjARBg8rBgEEAYGtIYIsAQEEAwIwEQYPKwYBBAGBrSGCLAIBBAMBMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGCLB4wCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYEFK4bmy5/xm8bSbRAqO5OWckAMT/yMB8GA1UdIwQYMBaAFLugO6z48GCMtNDV+biQ4KySFVcbMEUGA1UdEQQ+MDyCHGVsZWFybmluZzIudW5pLWhlaWRlbGJlcmcuZGWBHHh4MUBpeC51cnoudW5pLWhlaWRlbGJlcmcuZGUwgY8GA1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktaGVpZGVsYmVyZy1jYS9wdWIvY3JsL2NhY3JsLmNybDBAoD6gPIY6aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktaGVpZGVsYmVyZy1jYS9wdWIvY3JsL2NhY3JsLmNybDCB3QYIKwYBBQUHAQEEgdAwgc0wMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIvT0NTUDBKBggrBgEFBQcwAoY+aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktaGVpZGVsYmVyZy1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLWhlaWRlbGJlcmctY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQCBN2DoOCcl5X/mdqJbtzqv4oj6Qk4KQbuB2ioRaPeWeKz4NBydTo+JoYQBU1499fdi+zIyrRqpXELnf20GG5MliCwTVTxFgtOWkYDMN++K087VvWfHdFLvw1/M5lx0YsRSEkOYHs6ugETXpAJIBxfvcNUfP8bnHrljeOc1D83yFz9RoJ5UR1Q9Us238FJrJvSM9z8AfoP3tcO4Dg1ILZ6o5ISN08rN3kePfhjlI1YmIhNsNjMRY0K6cNv4mm6GJ21b/S00GNdnH89HLu0X/FCWti/3F5jWfoRDpxn6xtBYYVbJRpYM5t/DujXwp9NT6/4AbDzfEJjb8znCIlNNSGbUwC8DAwAAAAABAQAAAAAAAARub25lAAAAEFJTQS1QS0NTMS1TSEEyNTYBlZ+xZWUXSH+rm9iRO+Uxl650zaXNL0c/lvXwt//2LGgAAAAEZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAGSDCCBkQwggUsoAMCAQICBxhV4KRiExwwDQYJKoZIhvcNAQELBQAwga4xCzAJBgNVBAYTAkRFMRswGQYDVQQIExJCYWRlbi1XdWVydHRlbWJlcmcxEzARBgNVBAcTCkhlaWRlbGJlcmcxIDAeBgNVBAoTF1VuaXZlcnNpdGFldCBIZWlkZWxiZXJnMQwwCgYDVQQLEwN1bmkxEzARBgNVBAMTClVuaS1IRDItQ0ExKDAmBgkqhkiG9w0BCQEWGXBraUB1cnoudW5pLWhlaWRlbGJlcmcuZGUwHhcNMTQxMDA5MTAyNzMzWhcNMTkwNzA5MjM1OTAwWjCBljELMAkGA1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzETMBEGA1UEBxMKSGVpZGVsYmVyZzEgMB4GA1UEChMXVW5pdmVyc2l0YWV0IEhlaWRlbGJlcmcxDDAKBgNVBAsTA3VyejElMCMGA1UEAxMcZWxlYXJuaW5nMi51bmktaGVpZGVsYmVyZy5kZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKKEd1SBfxqVzn8C9jTxP+2mO8d7fJpPzXib78BUlonadPtTQoHlNvf0kKT6S90O0aInwMM5Ik6jsalpvmJVQSY+vyR0HHr5DyfixfKUN5lqQWxi6rHiTcrUFOKR/KUyRIv+f2G6nt7wSkWQyRxKqFLDnP5BHbrSj6IAJi3vLkBsAG4t6JXfLghiH2BM5iIdYhrQEix3NvrGuc2vnexAcUCP+PINZ5/xz58b5SarwGtihesDlOgWa46xz9ut7UO5GfcoOb5CjicSrotA0hwci33uagf0xa0pPBcCL8nbbevSh+dK3rob6tccbJ877R9a2ObqIltMRyTv1vj84d1+qvcCAwEAAaOCAnswggJ3ME8GA1UdIARIMEYwEQYPKwYBBAGBrSGCLAEBBAMCMBEGDysGAQQBga0hgiwCAQQDATAPBg0rBgEEAYGtIYIsAQEEMA0GCysGAQQBga0hgiweMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgTwMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB0GA1UdDgQWBBSuG5suf8ZvG0m0QKjuTlnJADE/8jAfBgNVHSMEGDAWgBS7oDus+PBgjLTQ1fm4kOCskhVXGzBFBgNVHREEPjA8ghxlbGVhcm5pbmcyLnVuaS1oZWlkZWxiZXJnLmRlgRx4eDFAaXgudXJ6LnVuaS1oZWlkZWxiZXJnLmRlMIGPBgNVHR8EgYcwgYQwQKA+oDyGOmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLWhlaWRlbGJlcmctY2EvcHViL2NybC9jYWNybC5jcmwwQKA+oDyGOmh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLWhlaWRlbGJlcmctY2EvcHViL2NybC9jYWNybC5jcmwwgd0GCCsGAQUFBwEBBIHQMIHNMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSgYIKwYBBQUHMAKGPmh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLWhlaWRlbGJlcmctY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MEoGCCsGAQUFBzAChj5odHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1oZWlkZWxiZXJnLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDANBgkqhkiG9w0BAQsFAAOCAQEAgTdg6DgnJeV/5naiW7c6r+KI+kJOCkG7gdoqEWj3lnis+DQcnU6PiaGEAVNePfX3YvsyMq0aqVxC539tBhuTJYgsE1U8RYLTlpGAzDfvitPO1b1nx3RS78NfzOZcdGLEUhJDmB7OroBE16QCSAcX73DVHz/G5x65Y3jnNQ/N8hc/UaCeVEdUPVLNt/BSayb0jPc/AH6D97XDuA4NSC2eqOSEjdPKzd5Hj34Y5SNWJiITbDYzEWNCunDb+JpuhidtW/0tNBjXZx/PRy7tF/xQlrYv9xeY1n6EQ6cZ+sbQWGFWyUaWDObfw7o18KfTU+v+AGw83xCY2/M5wiJTTUhm1GYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABZYwggWSMIIEeqADAgECAgcXpCTd5cjoMA0GCSqGSIb3DQEBCwUAMFoxCzAJBgNVBAYTAkRFMRMwEQYDVQQKEwpERk4tVmVyZWluMRAwDgYDVQQLEwdERk4tUEtJMSQwIgYDVQQDExtERk4tVmVyZWluIFBDQSBHbG9iYWwgLSBHMDEwHhcNMTQwNTI3MTQ1NTA5WhcNMTkwNzA5MjM1OTAwWjCBrjELMAkGA1UEBhMCREUxGzAZBgNVBAgTEkJhZGVuLVd1ZXJ0dGVtYmVyZzETMBEGA1UEBxMKSGVpZGVsYmVyZzEgMB4GA1UEChMXVW5pdmVyc2l0YWV0IEhlaWRlbGJlcmcxDDAKBgNVBAsTA3VuaTETMBEGA1UEAxMKVW5pLUhEMi1DQTEoMCYGCSqGSIb3DQEJARYZcGtpQHVyei51bmktaGVpZGVsYmVyZy5kZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKTkYVVz7bbw7FlL3Zicwnz6Wnfh4YnTQ5nUzNH0PkGgvEIruEYCm2WUi8LKuqFdPHsq2XsfMHkMjDgJzDCu2WmFubhC+QxkiN/TaFPZVrQArb82QM+0f2Ncrf42dq1uZootC4cx7YuwVhamJhTnum1mY1kR7pkWQ6xV2LsPGbNcrtzbSNYABhCO52qXw3oTs7E9DHjQquwP5Av6qM7TwFB1+Wqu8H59PLhu53SveGhXBeaZL7rkSidfP/BEs3ZBRML96+ykY0PUlm2kgOP1JTuVURxJMTWYzDsxcZKhiuMmuhMlCulCY8SgJzvjCWbu2BxsFnWfY4co2QNA+eMxy/kCAwEAAaOCAgYwggICMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0PAQH/BAQDAgEGMBEGA1UdIAQKMAgwBgYEVR0gADAdBgNVHQ4EFgQUu6A7rPjwYIy00NX5uJDgrJIVVxswHwYDVR0jBBgwFoAUSbfGz+g9H3/qRHsTKffxCnA+3mQwJAYDVR0RBB0wG4EZcGtpQHVyei51bmktaGVpZGVsYmVyZy5kZTCBiAYDVR0fBIGAMH4wPaA7oDmGN2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZ2xvYmFsLXJvb3QtY2EvcHViL2NybC9jYWNybC5jcmwwPaA7oDmGN2h0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvZ2xvYmFsLXJvb3QtY2EvcHViL2NybC9jYWNybC5jcmwwgdcGCCsGAQUFBwEBBIHKMIHHMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwRwYIKwYBBQUHMAKGO2h0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvZ2xvYmFsLXJvb3QtY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MEcGCCsGAQUFBzAChjtodHRwOi8vY2RwMi5wY2EuZGZuLmRlL2dsb2JhbC1yb290LWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNydDANBgkqhkiG9w0BAQsFAAOCAQEAseA21s1BuGgto5QyMekWHz9Mp/jl8ctK/nzmZw4kpDAukBvRMnn+rMXFcgA/+lFXWIyZilCy/6OqxcaS7jD60cm+Tca3a2NhJo/q38LQy9IKke324svfctpATtrx4UMfZEHV7PQ8VPSlcKK/DAA6U9h94EU4P+bZNC3c7UbQZ1kWv+Lj2iw2kxCuaWlOc6nZJ6hFLgtv5tIPQSq1N8EbUGNAzMcn9fap7+tEiqLoxbGgVIwFWgW8zvLJJGXrlBRxjC7Pz3v1RPF6/jVH35mZCr9rLJG4HjFaGigaB6OnX0RqnfdhFX5n/sftcNZCPczk+9jDmbNZWtjn6hZX2pxU/2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABNkwggTVMIIDvaADAgECAghQTsb1PRG0ZDANBgkqhkiG9w0BAQsFADBxMQswCQYDVQQGEwJERTEcMBoGA1UEChMTRGV1dHNjaGUgVGVsZWtvbSBBRzEfMB0GA1UECxMWVC1UZWxlU2VjIFRydXN0IENlbnRlcjEjMCEGA1UEAxMaRGV1dHNjaGUgVGVsZWtvbSBSb290IENBIDIwHhcNMTQwNzIyMTIwODI2WhcNMTkwNzA5MjM1OTAwWjBaMQswCQYDVQQGEwJERTETMBEGA1UEChMKREZOLVZlcmVpbjEQMA4GA1UECxMHREZOLVBLSTEkMCIGA1UEAxMbREZOLVZlcmVpbiBQQ0EgR2xvYmFsIC0gRzAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6ZvDZ4X5Da71jVTDllA1PWLpbkztlNcAW5UidNQg6zSP1uzAMQQLmYHiphTSUqAoI4SLdIkEXlvg4njBeMsWyyg1OXstkEXQ7aAAeny/Sg4bAMOG6VwrMRF7DPOCJEOMHDiLamgAmu7cT3ir0sYTm3at7t4m6O8Br3QPwQmi9mvOvdPNFDBP9eXjpMhim4IaAycwDQJlYE3t0QkjKpY1WCfTdsZxtpAdxO3/NYZ9bzOz2w/FEcKKg6GUXUFr2NIQ9Uz9ylGs2b3vkoO72uuLFlZWQ8/h1RM9ph8nMM1JVNvJEzSacXXFbOqnC5j5IZ0nrz6jOTlIaoytyZn7wxLyvQIDAQABo4IBhjCCAYIwDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBRJt8bP6D0ff+pEexMp9/EKcD7eZDAfBgNVHSMEGDAWgBQxw3kbuvVT1xfgiXotF2wKsyudMzASBgNVHRMBAf8ECDAGAQH/AgECMGIGA1UdIARbMFkwEQYPKwYBBAGBrSGCLAEBBAICMBEGDysGAQQBga0hgiwBAQQDADARBg8rBgEEAYGtIYIsAQEEAwEwDwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGtIYIsHjA+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vcGtpMDMzNi50ZWxlc2VjLmRlL3JsL0RUX1JPT1RfQ0FfMi5jcmwweAYIKwYBBQUHAQEEbDBqMCwGCCsGAQUFBzABhiBodHRwOi8vb2NzcDAzMzYudGVsZXNlYy5kZS9vY3NwcjA6BggrBgEFBQcwAoYuaHR0cDovL3BraTAzMzYudGVsZXNlYy5kZS9jcnQvRFRfUk9PVF9DQV8yLmNlcjANBgkqhkiG9w0BAQsFAAOCAQEAYyAo/ZwhhnK+OUZZOTIlvKkBmw3Myn1BnIZtCm4ssxNZdbEzkhthJxb/w7LVNYL7hCoBSb1mu2YvssIGXW4/buMBWlvKQ2NclbbhMacf1QdfTeZlgk4y+cN8ekvNTVx07iHydQLsUj7SyWrTkCNuSWc1vn9NVqTszC/Pt6GXqHI+ybxA1lqkCD3WvILDt7cyjrEsjmpttzUCGc/1OURYY6ckABCwu/xOr24vOLulV0k/2G5QbyyXltwdRpplic+uzPLl2Z9Tsz6hL5Kp2AvGhB8Exuse6J99tXulAvEkxSRjETTMWpMgKnmIOiVCkKllO3yG0xIVIyn8LNrMOVtUF2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAAA6MwggOfMIICh6ADAgECAgEmMA0GCSqGSIb3DQEBBQUAMHExCzAJBgNVBAYTAkRFMRwwGgYDVQQKExNEZXV0c2NoZSBUZWxla29tIEFHMR8wHQYDVQQLExZULVRlbGVTZWMgVHJ1c3QgQ2VudGVyMSMwIQYDVQQDExpEZXV0c2NoZSBUZWxla29tIFJvb3QgQ0EgMjAeFw05OTA3MDkxMjExMDBaFw0xOTA3MDkyMzU5MDBaMHExCzAJBgNVBAYTAkRFMRwwGgYDVQQKExNEZXV0c2NoZSBUZWxla29tIEFHMR8wHQYDVQQLExZULVRlbGVTZWMgVHJ1c3QgQ2VudGVyMSMwIQYDVQQDExpEZXV0c2NoZSBUZWxla29tIFJvb3QgQ0EgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKsLozXgiykUsRSFrzwQ5DlvNV1Krt3qYY2VSfRvZKMaYGakqUAihNnUpeV4kw5oAa25TVw6ztO4qEJA38+juoJZapIbrBya2ggrJSf5aSNH8eDrLHqb9RMC0H40fMKePABZq/XaDPUyPCusUNrWw96DlMqoDJkyDghIVltq+9rhWFgBSV9yQTwVBgGOXa2quJO0zZ7rp+hqLVI02zrvXHVR2tvzMfnucZgyxFQVRAz5m1Xtrd8YCKCjhopJ7lMFjxlM1d5YeZvSahxCq8XVp89oD5bk4WGYdmHIkXzWPgDikVCH4Z0K5q2X0h3GOn3LvNoDNNWOWwH1age3FrZuSn8CAwEAAaNCMEAwHQYDVR0OBBYEFDHDeRu69VPXF+CJei0XbAqzK50zMA8GA1UdEwQIMAYBAf8CAQUwDgYDVR0PAQH/BAQDAgEGMA0GCSqGSIb3DQEBBQUAA4IBAQCUZFmtOWTnKesT/lrDixNXyAQk8HR3wGDjZ/vpiaaDv5aCfG7Uwz3vnoBuuym0mHqxO1TrORdHfhqOC/wfMVkxBLLOF/Msx2I2VeIi2IlVtJhIqmT61hw22ER4WlojOleX9XowT66fakxLK46gA+M+4KnU0nvSs6jicjytnv+AWeSbRbT2O7DNORmYMuXqIWGQ5DEhjjSx9y81SoUQ2ueKNyG+WWPg8oWIMVPUVBSFcHn0LgZ3J3UvH7iK+f7Futg25IPs52W3v2Na80avgZQ31EGM1iPWHs/1aBtEY6Jauqc1WaHlcAWbDiNXmZQKbbo5YyiGkvMYhNj70c8FVmRXAAA= request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 13 Nov 2018 09:36:49 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.0.32
+X-Powered-By: PHP/7.0.32
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache
+Content-Language: de
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Tue, 13 Nov 2018 09:36:49 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.0.32
+X-Powered-By: PHP/7.0.32
+Expires: 
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache
+Content-Language: de
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ uncompressed-len 0 net-response-time-onstart 179 net-response-time-onstop 243 predictor::resource-count 26 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/styles.php/more/1538392260_1/all 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/javascript-static.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/folder-24 1,1,1542101809,4097 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/f/unknown-24 1,1,1542101809,4097 predictor::https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/requirejs/require.min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/javascript.php/more/1538392260/footer 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?m/1538043940/core/dock/dock-loader-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/lib/requirejs.php/1538043940/core/first.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?m/1538043940/core/event/event-min.js&m/1538043940/filter_mathjaxloader/loader/loader-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/lib/jquery/jquery-3.2.1.min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?m/1538043940/core/widget/widget-focusafterclose-min.js&3.17.2/plugin/plugin-min.js&m/1538043940/core/lockscroll/lockscroll-min.js&m/1538043940/core/notification/notification-dialogue-min.js&m/1538043940/core/notification/notification-alert-min.js&m/1538043940/core/notification/notification-exception-min.js&m/1538043940/core/notification/notification-ajaxexception-min.js&m/1538043940/filter_glossary/autolinker/autolinker-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?m/1538043940/core/tooltip/tooltip-min.js&m/1538043940/core/popuphelp/popuphelp-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/lib/javascript.php/1538043940/mod/folder/module.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?2in3/2.9.0/build/yui2-treeview/yui2-treeview-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?2in3/2.9.0/build/yui2-skin-sam-treeview/assets/skins/sam/yui2-skin-sam-treeview-min.css 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?2in3/2.9.0/build/yui2-yahoo/yui2-yahoo-min.js&2in3/2.9.0/build/yui2-dom/yui2-dom-min.js&2in3/2.9.0/build/yui2-event/yui2-event-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?3.17.2/event-mousewheel/event-mousewheel-min.js&3.17.2/event-resize/event-resize-min.js&3.17.2/event-hover/event-hover-min.js&3.17.2/event-touch/event-touch-min.js&3.17.2/event-move/event-move-min.js&3.17.2/event-flick/event-flick-min.js&3.17.2/event-valuechange/event-valuechange-min.js&3.17.2/event-tap/event-tap-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/y/lm 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/y/lp 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/yui_combo.php?3.17.2/event-simulate/event-simulate-min.js&3.17.2/async-queue/async-queue-min.js&3.17.2/gesture-simulate/gesture-simulate-min.js&3.17.2/node-event-simulate/node-event-simulate-min.js&m/1538043940/core/actionmenu/actionmenu-min.js 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/y/tn 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/y/ln 1,1,1542101809,4096 predictor::https://elearning2.uni-heidelberg.de/theme/image.php/more/core/1538392260/i/loading_small 1,1,1542101809,4096   ��
